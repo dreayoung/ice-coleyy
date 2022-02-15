@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Montserrat:wght@900&family=Playfair+Display&family=Raleway&family=Rowdies:wght@700&display=swap');
+
+.heading {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.sub {
+  font-family: 'Raleway', sans-serif;
+}
+
+@media (min-width: 1024px) {
+
+  .deg_0 {
+    transform: translate(251px);
+    top: 50%;
+    left: 33.333333%;
+    margin: -51px;
+    position: absolute;
+    width: 11rem;
+    height: 11rem;
+  }
+
+  .deg-45 {
+    transform: rotate(46deg) translate(251px) rotate(-46deg);
+    top: 50%;
+    right: 50%;
+    left: 33.333333%;
+    margin: -51px;
+    position: absolute;
+    width: 11rem;
+    height: 11rem;
+  }
+
+  .deg-90 {
+    transform: rotate(91deg) translate(251px) rotate(-91deg);
+    top: 50%;
+    right: 50%;
+    left: 33.333333%;
+    margin: -51px;
+    position: absolute;
+    width: 11rem;
+    height: 11rem;
+  }
+
+  .deg-135 {
+    transform: rotate(136deg) translate(251px) rotate(-136deg);
+    top: 50%;
+    right: 50%;
+    left: 33.333333%;
+    margin: -51px;
+    position: absolute;
+    width: 11rem;
+    height: 11rem;
+  }
+
+  .deg-180 {
+    transform: rotate(181deg) translate(251px) rotate(-181deg);
+    top: 50%;
+    right: 50%;
+    left: 33.333333%;
+    margin: -51px;
+    position: absolute;
+    width: 11rem;
+    height: 11rem;
+  }
+
+  .deg-225 {
+    transform: rotate(226deg) translate(251px) rotate(-226deg);
+    top: 50%;
+    right: 50%;
+    left: 33.333333%;
+    margin: -51px;
+    position: absolute;
+    width: 11rem;
+    height: 11rem;
+  }
+
+  .deg-270 {
+    transform: rotate(271deg) translate(251px) rotate(-271deg);
+    top: 50%;
+    right: 50%;
+    left: 33.333333%;
+    margin: -51px;
+    position: absolute;
+    width: 11rem;
+    height: 11rem;
+  }
+
+  .deg-315 {
+    transform: rotate(316deg) translate(251px) rotate(-316deg);
+    top: 50%;
+    right: 50%;
+    left: 33.333333%;
+    margin: -51px;
+    position: absolute;
+    width: 11rem;
+    height: 11rem;
+  }
+}
