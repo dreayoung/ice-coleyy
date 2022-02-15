@@ -35,7 +35,7 @@ export default function Home() {
         </div>
         <ScrollLink className="active" to="about" spy={true} smooth={true}>
           <div className="absolute flex justify-center inset-x-0 bottom-10 lg:bottom-36 text-gray-600 animate-bounce">
-            Learn more
+            Learn more!
           </div>
         </ScrollLink>
       </div>
