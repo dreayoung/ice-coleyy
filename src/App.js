@@ -14,4 +14,3 @@ export default function App() {
   );
 }
 
-// {/* <div>Copyright©2021 Cole Edwards, All Rights Reserved. All material on this site may not be reproduced, distributed, cached or otherwise used, except with my prior written permission.</div> */}

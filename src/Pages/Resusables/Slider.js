@@ -32,7 +32,7 @@ export default function Slider({ id_name, imgs, shoot }) {
           <div className="heading text-xl pb-2 lg:text-4xl">{shoot}</div>
         </div>
       </div>
-      <div className="w-fit p-2 relative lg:w-4/12 lg:flex lg:justify-center lg:mx-auto">
+      <div className="w-fit relative lg:w-4/12 lg:flex lg:justify-center lg:mx-auto">
         <div className="aspect-w-6 aspect-h-9">
           <img src={imgs[currentIndex]} alt={shoot} />
         </div>
