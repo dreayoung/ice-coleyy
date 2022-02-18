@@ -9,55 +9,59 @@ export default function Home() {
     <div data-testid="hmpg-1">
       <div className="relative top-0 lg:overflow-hidden">
         <div className="w-full h-full bg-gray-700 absolute opacity-60" />
-        <div className="w-full h-full absolute lg:top-0 lg:flex lg:text-left">
-          <div className="logo text-gray-600 font-medium text-right text-xl mt-5 mr-4 lg:text-gray-600 lg:text-6xl">
+        {/* <div className="w-full h-full absolute lg:top-0 lg:flex lg:text-left">
+          <div className="hidden logo text-gray-600 font-medium text-right text-xl mt-5 mr-4 lg:text-gray-600 lg:text-6xl lg:block">
             ICE COLEYY
           </div>
-        </div>
-        <div className="per flex absolute right-4 top-32">
-          <a
-            href="https://www.instagram.com/ice.coleyy/"
-            target="_blank"
-            className="pb-20"
-          >
-            <AiFillInstagram size={30} color="purple" />
-          </a>
-          <div className="text-gray-600 text-xl pb-10 hover:text-gray-700 lg:hover:text-white">
-            <Link to="/gallery">GALLERY</Link>
-          </div>
-          <div className="text-gray-600 text-xl hover:text-gray-700 lg:hover:text-white">
-            <Link to="/contact">CONTACT</Link>
-          </div>
-        </div>
-        <div className="justify-center lg:flex lg:min-h-screen">
+        </div> */}
+
+        <div className="justify-center min-h-screen lg:flex lg:min-h-screen">
           <img
             src={process.env.PUBLIC_URL + '/Headshot2.jpg'}
-            className="w-[350px] h-[450px] lg:w-[750px] h-[800px] lg:p-2"
+            className="w-[300px] h-[420px] lg:w-[600px] lg:h-[720px] lg:pt-10"
             alt="Ice Colley HeadShot2"
           />
           <img
             src={process.env.PUBLIC_URL + '/Headshot1.jpg'}
-            className="w-[350px] h-[450px] lg:w-[750px] h-[800px] lg:p-2"
+            className="w-[300px] h-[425px] lg:w-[600px] lg:h-[720px] lg:pt-10"
             alt="Ice Colley HeadShot1"
           />
         </div>
-        <ScrollLink className="active" to="about" spy={true} smooth={true}>
-          <AiOutlineCaretDown
-            size={30}
-            color="purple"
-            className="absolute right-4 bottom-8"
-          />
-        </ScrollLink>
       </div>
+      <div className="per flex absolute right-6 bottom-20 lg:bottom-20 lg:right-12">
+        <a
+          href="https://www.instagram.com/ice.coleyy/"
+          target="_blank"
+          rel="noreferrer"
+          className="pb-8 hover:drop-shadow-md hover:brightness-125 lg:pb-6"
+        >
+          <AiFillInstagram size={40} color="purple" />
+        </a>
+        <div className="text-gray-600 text-4xl pb-10 lg:pb-8 lg:text-3xl hover:text-gray-700 lg:hover:text-white">
+          <Link to="/gallery">GALLERY</Link>
+        </div>
+        <div className="text-gray-600 text-4xl hover:text-gray-700 lg:text-3xl lg:hover:text-white">
+          <Link to="/contact">CONTACT</Link>
+        </div>
+      </div>
+      <ScrollLink className="active hover:cursor-pointer" to="about" spy={true} smooth={true}>
+        <div className="invisible lg:visible mon absolute text-gray-600 text-3xl right-32 bottom-6 hover:text-white uppercase">L e a r n<span className="pl-4 pr-4"/>M o r e</div>
+        <AiOutlineCaretDown
+          size={40}
+          color="purple"
+          className="absolute right-6 bottom-6 lg:right-12"
+        />
+      </ScrollLink>
 
-      <div id="about" className="text-center mt-72 mb-72 lg:mt-72 lg:mb-32">
-        <h2 className="logo text-6xl pt-10 uppercase font-extrabold">
+      <div id="about" className="text-center pt-20 lg:pt-72 lg:pb-32">
+        {/* <div className="bg-gray-700 opacity-60 w-full h-full absolute top-[49.3rem] bottom-0" /> */}
+        <h2 className="mon text-7xl text-gray-700 uppercase font-extrabold">
           Ice Coleyy
         </h2>
-        <div className="begin text-l text-indigo-800 font-thin">
+        <div className="mon text-xs lg:text-l text-block font-thin">
           the model with the crazy faces
         </div>
-        <p className="bb leading-loose mt-10 p-10 text-l border-x-4 border-indigo-200 lg:text-xl lg:pr-52 lg:pl-52">
+        <p className="bb drop-shadow-xl leading-loose mt-10 p-8 text-l text-black lg:border-x-4 lg:border-gray-700 lg:text-xl lg:pr-52 lg:pl-52">
           Wassup, I’m Cole, a Howard University student born and raised in New
           York City. I began modeling in 2019 after being interested in fashion
           for a number of years. Back then, it was just iPhone pictures to
@@ -66,18 +70,27 @@ export default function Home() {
           many photographers who helped me execute many creative ideas so I’d
           like to invite everyone into my thoughts.
         </p>
-        <div class="mt-8">
+        <div className="mt-10">
           <Link
             to="/gallery"
-            className="begin border border-transparent text-base font-medium rounded-md text-white bg-black hover:bg-indigo-800 hover:text-white px-8 py-3 ring-2"
+            className="mon border border-transparent text-base font-medium rounded-full text-gray-700 hover:bg-indigo-800 hover:text-white px-8 py-3 ring-2 ring-gray-700"
           >
-            Enter
+            click here
           </Link>
         </div>
       </div>
-      <div className="text-xs text-center border p-4">
-        <p>Copyright©2021 Cole Edwards, All Rights Reserved. All material on this site may not be reproduced, distributed, cached or otherwise used, except with my prior written permission.</p>
-        <p className="pt-2">site made by <span><a href="">askdwe</a></span></p>
+      <div className="text-xs text-center pt-20 pl-4 pb-8 pr-4">
+        <p>
+          Copyright©2021 Cole Edwards, All Rights Reserved. All material on this
+          site may not be reproduced, distributed, cached or otherwise used,
+          except with my prior written permission.
+        </p>
+        <p className="pt-2">
+          site made by{' '}
+          <span>
+            <a href="https://www.instagram.com/askdwe/" target="_blank" rel="noreferrer" className="underline decoration-wavy">askdwe</a>
+          </span>
+        </p>
       </div>
     </div>
   );

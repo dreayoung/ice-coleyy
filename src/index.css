@@ -3,21 +3,18 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Rowdies&family=Sarpanch&family=Style+Script&family=The+Nautigal:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Montserrat:wght@900&family=Playfair+Display&family=Raleway&family=Rowdies:wght@700&display=swap');
 
 .logo {
   font-family: 'The Nautigal', cursive;
 }
 
-@media (min-width: 400px) {
-  .per {
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    font-family: 'Sarpanch';
-  }
+.bb {
+  font-family: 'Raleway';
 }
 
-.bb {
-  font-family: 'Sarpanch';
+.mon {
+  font-family: 'Montserrat';
 }
 
 .begin {
