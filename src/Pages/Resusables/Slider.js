@@ -24,7 +24,7 @@ export default function Slider({ id_name, imgs, shoot }) {
 
   return (
     <>
-      <div className="lg:flex lg:flex-row lg:justify-center lg:items-center lg:mt-40">
+      <div className="mt-96 lg:flex lg:flex-row lg:justify-center lg:items-center lg:mt-40">
         <div
           className="mt-28 mr-20 ml-20 text-center"
           id={id_name}

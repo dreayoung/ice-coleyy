@@ -1,4 +1,9 @@
 
+.per {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-family: 'Montserrat';
+}
 
 /* .heading {
     font-family: 'Style Script', cursive;
