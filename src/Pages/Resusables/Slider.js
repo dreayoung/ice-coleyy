@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
-// import GalleryPageImages from '../Gallery Page/index'
 import Swipe from 'react-easy-swipe';
 
 class Slider extends Component {
@@ -62,6 +61,7 @@ class Slider extends Component {
                   href={`https://www.instagram.com/${this.props.photographer}`}
                   target="_blank"
                   rel="noreferrer"
+                  className="hover:underline hover:decoration-wavy"
                 >
                   @{this.props.photographer}
                 </a>
@@ -71,7 +71,12 @@ class Slider extends Component {
             {this.props.styling ? (
               <div>
                 Styling:{' '}
-                <a href={`https://www.instagram.com/${this.props.styling}`}>
+                <a
+                  href={`https://www.instagram.com/${this.props.styling}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:underline hover:decoration-wavy"
+                >
                   @{this.props.styling}
                 </a>
               </div>
@@ -80,7 +85,12 @@ class Slider extends Component {
             {this.props.creative ? (
               <div>
                 Creative Direction:{' '}
-                <a href={`https://www.instagram.com/${this.props.creative}`}>
+                <a
+                  href={`https://www.instagram.com/${this.props.creative}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:underline hover:decoration-wavy"
+                >
                   @{this.props.creative}
                 </a>
               </div>
@@ -89,7 +99,12 @@ class Slider extends Component {
             {this.props.model ? (
               <div>
                 Model:{' '}
-                <a href={`https://www.instagram.com/${this.props.model}`}>
+                <a
+                  href={`https://www.instagram.com/${this.props.model}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:underline hover:decoration-wavy"
+                >
                   @{this.props.model}
                 </a>
               </div>

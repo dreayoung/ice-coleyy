@@ -13,12 +13,12 @@ export default function Home() {
         <div className="justify-center min-h-screen lg:flex lg:min-h-screen">
           <img
             src={process.env.PUBLIC_URL + '/Headshot2.jpg'}
-            className="w-[410px] h-[420px] lg:w-[600px] lg:h-[720px] lg:pt-10"
+            className="w-[310px] h-[420px] lg:w-[600px] lg:h-[720px] lg:pt-10"
             alt="Ice Colley HeadShot2"
           />
           <img
             src={process.env.PUBLIC_URL + '/Headshot1.jpg'}
-            className="w-[410px] h-[420px] lg:w-[600px] lg:h-[720px] lg:pt-10"
+            className="w-[310px] h-[420px] lg:w-[600px] lg:h-[720px] lg:pt-10"
             alt="Ice Colley HeadShot1"
           />
         </div>
