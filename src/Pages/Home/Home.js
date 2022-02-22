@@ -74,7 +74,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className="text-xs text-center pt-38 pl-4 pb-8 pr-4">
+      <div className="text-xs text-center pt-32 pl-4 pb-8 pr-4">
         <p>
           Copyright©2021 Cole Edwards, All Rights Reserved. All material on this
           site may not be reproduced, distributed, cached or otherwise used,

@@ -61,7 +61,7 @@ export default function Gallery() {
         </div> */}
       </div>
 
-      <div className="grid grid-cols-2 gap-10 mt-10 px-12 justify-center lg:mx-auto">
+      <div className="grid grid-cols-2 gap-10 ml-10 mt-10 px-12 justify-center lg:mx-auto">
         <ScrollLink
           activeClass="active"
           to="HTA_x_HoodstyleHub"
@@ -70,7 +70,7 @@ export default function Gallery() {
         >
           {/*  */}
           <div className="deg_0 relative w-32 h-32 rounded-full hover:animate-pulse">
-            <div className="w-32 h-32 rounded-full absolute lg opacity-40 lg:w-44 lg:h-44" />
+            <div className="w-32 h-32 rounded-full absolute lg opacity-40 cursor-pointer lg:w-44 lg:h-44" />
             <img
               src={
                 process.env.PUBLIC_URL +
@@ -79,15 +79,12 @@ export default function Gallery() {
               alt="coor"
               className="rounded-full ring ring-gray-200 w-32 h-32 lg:w-44 lg:h-44"
             />
-            <div className="sub opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-sm text-white font-semibold hover:cursor-pointer">
-              HTA x Hoodstyle Hub
-            </div>
           </div>
         </ScrollLink>
 
         <ScrollLink activeClass="active" to="smgo" spy={true} smooth={true}>
           <div className="deg-45 w-32 h-32  lg:w-44 lg:h-44 rounded-full hover:animate-pulse">
-            <div className="w-32 h-32  lg:w-44 lg:h-44 rounded-full absolute opacity-40" />
+            <div className="w-32 h-32  lg:w-44 lg:h-44 rounded-full absolute opacity-40 cursor-pointer" />
             <img
               src={
                 process.env.PUBLIC_URL +
@@ -96,9 +93,6 @@ export default function Gallery() {
               alt="photoshoot"
               className="rounded-full ring ring-gray-200 w-32 h-32  lg:w-44 lg:h-44"
             />
-            <div className="sub opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-sm text-white font-semibold hover:cursor-pointer">
-              SHOW MUST GO ON
-            </div>
           </div>
         </ScrollLink>
 
@@ -109,7 +103,7 @@ export default function Gallery() {
           smooth={true}
         >
           <div className="deg-90 w-32 h-32  lg:w-44 lg:h-44 rounded-full hover:animate-pulse">
-            <div className="w-32 h-32  lg:w-44 lg:h-44 rounded-full absolute opacity-40" />
+            <div className="w-32 h-32  lg:w-44 lg:h-44 rounded-full absolute opacity-40 cursor-pointer" />
             <img
               src={
                 process.env.PUBLIC_URL +
@@ -118,9 +112,6 @@ export default function Gallery() {
               alt="no remorse photoshoot"
               className="rounded-full ring ring-gray-200 w-32 h-32  lg:w-44 lg:h-44"
             />
-            <div className="invisible lg:visible opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-sm text-white font-semibold hover:cursor-pointer">
-              NO REMORSE
-            </div>
           </div>
         </ScrollLink>
 
@@ -131,7 +122,7 @@ export default function Gallery() {
           smooth={true}
         >
           <div className="deg-135 w-32 h-32  lg:w-44 lg:h-44 rounded-full hover:animate-pulse">
-            <div className="w-32 h-32  lg:w-44 lg:h-44 rounded-full absolute opacity-40" />
+            <div className="w-32 h-32  lg:w-44 lg:h-44 rounded-full absolute opacity-40 cursor-pointer" />
             <img
               src={
                 process.env.PUBLIC_URL +
@@ -140,15 +131,12 @@ export default function Gallery() {
               alt="dominatrix photoshoot"
               className="rounded-full ring ring-gray-200 w-32 h-32  lg:w-44 lg:h-44"
             />
-            <div className="invisible lg:visible opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-sm text-white font-semibold hover:cursor-pointer">
-              DOMINATRIX
-            </div>
           </div>
         </ScrollLink>
 
         <ScrollLink activeClass="active" to="overtime" spy={true} smooth={true}>
           <div className="deg-180 w-32 h-32  lg:w-44 lg:h-44 rounded-full hover:animate-pulse">
-            <div className="w-32 h-32  lg:w-44 lg:h-44 rounded-full absolute opacity-40" />
+            <div className="w-32 h-32  lg:w-44 lg:h-44 rounded-full absolute opacity-40 cursor-pointer" />
             <img
               src={
                 process.env.PUBLIC_URL +
@@ -157,15 +145,12 @@ export default function Gallery() {
               alt="colors photoshoot"
               className="rounded-full ring ring-gray-200 w-32 h-32  lg:w-44 lg:h-44"
             />
-            <div className="invisible lg:visible opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-sm text-white font-semibold hover:cursor-pointer">
-              OVERTIME
-            </div>
           </div>
         </ScrollLink>
 
         <ScrollLink activeClass="active" to="tiied" spy={true} smooth={true}>
           <div className="deg-225 w-32 h-32  lg:w-44 lg:h-44 rounded-full hover:animate-pulse">
-            <div className="w-32 h-32  lg:w-44 lg:h-44 rounded-full absolute opacity-40" />
+            <div className="w-32 h-32  lg:w-44 lg:h-44 rounded-full absolute opacity-40 cursor-pointer" />
             <img
               src={
                 process.env.PUBLIC_URL +
@@ -174,9 +159,6 @@ export default function Gallery() {
               alt="tiied photoshoot"
               className="rounded-full ring ring-gray-200 w-32 h-32  lg:w-44 lg:h-44"
             />
-            <div className="invisible lg:visible opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-sm text-white font-semibold hover:cursor-pointer">
-              TIIED SHOOT
-            </div>
           </div>
         </ScrollLink>
 
@@ -187,7 +169,7 @@ export default function Gallery() {
           smooth={true}
         >
           <div className="deg-270 w-32 h-32  lg:w-44 lg:h-44 rounded-full hover:animate-pulse">
-            <div className="w-32 h-32  lg:w-44 lg:h-44 rounded-full absolute opacity-40" />
+            <div className="w-32 h-32  lg:w-44 lg:h-44 rounded-full absolute opacity-40 cursor-pointer" />
             <img
               src={
                 process.env.PUBLIC_URL + '/highlightimagesforgallerypage/B1.jpg'
@@ -195,26 +177,20 @@ export default function Gallery() {
               alt="the office photoshoot"
               className="rounded-full ring ring-gray-200 w-32 h-32  lg:w-44 lg:h-44"
             />
-            <div className="invisible lg:visible opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-sm text-white font-semibold hover:cursor-pointer">
-              THE OFFICE
-            </div>
           </div>
         </ScrollLink>
 
         <ScrollLink className="active" to="colors" spy={true} smooth={true}>
           <div className="deg-315 w-32 h-32  lg:w-44 lg:h-44 rounded-full hover:animate-pulse">
-            <div className="w-32 h-32  lg:w-44 lg:h-44 rounded-full absolute opacity-40" />
+            <div className="w-32 h-32  lg:w-44 lg:h-44 rounded-full absolute opacity-40 cursor-pointer" />
             <img
               src={
                 process.env.PUBLIC_URL +
                 '/highlightimagesforgallerypage/Colors-Indigo-Cole-4.png'
               }
               alt="colors photoshoot"
-              className="rounded-full ring ring-gray-200 w-32 h-32  lg:w-44 lg:h-44"
+              className="rounded-full ring ring-gray-200 w-32 h-32 lg:w-44 lg:h-44"
             />
-            <div className="invisible lg:visible opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-sm text-white font-semibold hover:cursor-pointer">
-              COLORS
-            </div>
           </div>
         </ScrollLink>
       </div>
@@ -274,7 +250,7 @@ export default function Gallery() {
         imgs={GalleryPageImages.colors}
         shoot="Colors"
         id_name="colors"
-//            no credits
+        //            no credits
       />
       <Slider
         imgs={GalleryPageImages.overtime}
@@ -285,7 +261,7 @@ export default function Gallery() {
         creative=""
         model={['ice.coleyy']}
       />
-      <div className="text-xs text-center border p-4">
+      <div className="text-xs text-center border p-28">
         <p>
           Copyright©2021 Cole Edwards, All Rights Reserved. All material on this
           site may not be reproduced, distributed, cached or otherwise used,
