@@ -1,9 +1,11 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
   const form = useRef();
+
+  const [status, setStatus] = useState('');
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -17,14 +19,23 @@ export default function Contact() {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          console.log('success', result.text);
+          setStatus('SUCCESS');
         },
         (error) => {
-          console.log(error.text);
+          console.log('fail..', error.text);
         }
       );
     e.target.reset();
   };
+
+  useEffect(() => {
+    if (status === 'SUCCESS') {
+      setTimeout(() => {
+        setStatus('');
+      }, 5000);
+    }
+  }, [status]);
 
   return (
     <>
@@ -33,10 +44,11 @@ export default function Contact() {
           <div className="md:col-span-1">
             <div className="px-4 sm:px-0">
               <div className="bg-ice-green rounded-full p-4 w-20 mx-auto">
-                <AiOutlineMail size={30} className="m-2 text-white"/>
+                <AiOutlineMail size={30} className="m-2 text-white" />
               </div>
               <p className="mt-4 text-sm text-gray-600">
-                Don't be shy -- drop me a line, i'll get back to you as soon as possible!
+                Don't be shy -- drop me a line, i'll get back to you as soon as
+                possible!
               </p>
             </div>
           </div>
@@ -44,11 +56,16 @@ export default function Contact() {
             <form ref={form} onSubmit={sendEmail}>
               <div className="shadow sm:rounded-md sm:overflow-hidden">
                 <div className="px-4 py-5 bg-white space-y-6 sm:p-6">
+                {status === 'SUCCESS' ? (
+                      <div className="px-4 py-3 leading normal text-center text-ice-green bg-gray-100 rounded-full">
+                        <p>your message has been sent!</p>
+                      </div>
+                    ) : null}
                   <div className="grid grid-cols-3 gap-6">
                     <div className="col-span-3 sm:col-span-2">
                       <label
                         className="bb block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                        for="grid-first-name"
+                        htmlFor="grid-first-name"
                       >
                         Full Name
                       </label>
@@ -68,7 +85,7 @@ export default function Contact() {
                     <div className="w-full px-3">
                       <label
                         className="bb block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                        for="grid-password"
+                        htmlFor="grid-password"
                       >
                         E-mail
                       </label>
@@ -76,9 +93,9 @@ export default function Contact() {
                         className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                         id="email"
                         type="email"
-                        name="user_email"
+                        name="email"
                       />
-                       <p className="text-red-500 text-xs italic">
+                      <p className="text-red-500 text-xs italic">
                         Please fill out this field.
                       </p>
                     </div>
@@ -87,7 +104,7 @@ export default function Contact() {
                     <div className="w-full px-3">
                       <label
                         className="bb block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                        for="grid-password"
+                        htmlFor="grid-password"
                       >
                         Message
                       </label>

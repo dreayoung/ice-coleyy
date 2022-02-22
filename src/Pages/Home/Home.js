@@ -8,22 +8,22 @@ export default function Home() {
   return (
     <div data-testid="hmpg-1">
       <div className="relative top-0 lg:overflow-hidden">
-        {/* <div className="w-full h-full bg-gray-700 absolute opacity-40" /> */}
+        <div className="w-full h-full bg-gray-700 absolute opacity-20" />
 
         <div className="justify-center min-h-screen lg:flex lg:min-h-screen">
           <img
             src={process.env.PUBLIC_URL + '/Headshot2.jpg'}
-            className="w-[300px] h-[420px] lg:w-[600px] lg:h-[720px] lg:pt-10"
+            className="w-[410px] h-[420px] lg:w-[600px] lg:h-[720px] lg:pt-10"
             alt="Ice Colley HeadShot2"
           />
           <img
             src={process.env.PUBLIC_URL + '/Headshot1.jpg'}
-            className="w-[300px] h-[425px] lg:w-[600px] lg:h-[720px] lg:pt-10"
+            className="w-[410px] h-[420px] lg:w-[600px] lg:h-[720px] lg:pt-10"
             alt="Ice Colley HeadShot1"
           />
         </div>
       </div>
-      <div className="per flex absolute right-12 bottom-20 lg:bottom-20 lg:right-12">
+      <div className="per flex absolute right-6 bottom-20 lg:bottom-20 lg:right-12">
         <a
           href="https://www.instagram.com/ice.coleyy/"
           target="_blank"
@@ -32,19 +32,26 @@ export default function Home() {
         >
           <AiFillInstagram size={40} color="purple" />
         </a>
-        <div className="text-gray-400 text-3xl pb-10 lg:pb-8 lg:text-3xl lg:hover:text-gray-700">
+        <div className="text-gray-400 text-3xl pb-10 hover:text-gray-700 lg:pb-8 lg:text-3xl lg:hover:text-gray-700">
           <Link to="/gallery">GALLERY</Link>
         </div>
         <div className="text-gray-400 text-3xl hover:text-gray-700 lg:text-3xl lg:hover:text-gray-700">
           <Link to="/contact">CONTACT</Link>
         </div>
       </div>
-      <ScrollLink className="active hover:cursor-pointer" to="about" spy={true} smooth={true}>
-        <div className="invisible lg:visible mon absolute text-gray-400 text-3xl right-32 bottom-6 lg:hover:text-gray-700 uppercase">L e a r n<span className="pl-4 pr-4"/>M o r e</div>
+      <ScrollLink
+        className="active hover:cursor-pointer"
+        to="about"
+        spy={true}
+        smooth={true}
+      >
+        <div className="invisible lg:visible mon absolute text-gray-400 text-3xl right-32 bottom-6 lg:hover:text-gray-700 uppercase">
+          L e a r n<span className="pl-4 pr-4" />M o r e
+        </div>
         <AiOutlineCaretDown
           size={35}
           color="purple"
-          className="absolute right-12 bottom-6 lg:right-12"
+          className="absolute right-6 bottom-6 hover:brightness-150 lg:right-12"
         />
       </ScrollLink>
 
@@ -83,7 +90,14 @@ export default function Home() {
         <p className="pt-2">
           site made by{' '}
           <span>
-            <a href="https://www.instagram.com/askdwe/" target="_blank" rel="noreferrer" className="underline decoration-wavy">askdwe</a>
+            <a
+              href="https://www.instagram.com/askdwe/"
+              target="_blank"
+              rel="noreferrer"
+              className="underline decoration-wavy"
+            >
+              askdwe
+            </a>
           </span>
         </p>
       </div>

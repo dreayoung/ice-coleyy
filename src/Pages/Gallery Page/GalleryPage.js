@@ -61,7 +61,7 @@ export default function Gallery() {
         </div> */}
       </div>
 
-      <div className="grid grid-cols-2 gap-10 ml-10 mt-10 px-12 justify-center lg:mx-auto">
+      <div className="grid grid-cols-2 gap-10 ml-8 mt-10 px-12 justify-center md:ml-44 lg:mx-auto">
         <ScrollLink
           activeClass="active"
           to="HTA_x_HoodstyleHub"
