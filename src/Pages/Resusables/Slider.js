@@ -54,38 +54,49 @@ class Slider extends Component {
           <div className="heading text-5xl pb-2 lg:text-4xl">
             {this.props.shoot}
           </div>
-          <div className="bb">
-            <div>
-              Photgrapher:{' '}
-              <a
-                href={`https://www.instagram.com/${this.props.photographer}`}
-                target="_blank"
-                rel="noreferrer"
-              >
-                @{this.props.photographer}
-              </a>
-            </div>
-            <div>
-              Styling:{' '}
-              <a href={`https://www.instagram.com/${this.props.styling}`}>
-                @{this.props.styling}
-              </a>
-            </div>
-            <div>
-              Creative Direction:{' '}
-              <a href={`https://www.instagram.com/${this.props.creative}`}>
-                @{this.props.creative}
-              </a>
-            </div>
-            <div>
-              Model:{' '}
-              <a href={`https://www.instagram.com/${this.props.model}`}>
-                @{this.props.model}
-              </a>
-            </div>
+          <div className="bb text-xs">
+            {this.props.photographer ? (
+              <div>
+                Photgrapher:{' '}
+                <a
+                  href={`https://www.instagram.com/${this.props.photographer}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  @{this.props.photographer}
+                </a>
+              </div>
+            ) : null}
+
+            {this.props.styling ? (
+              <div>
+                Styling:{' '}
+                <a href={`https://www.instagram.com/${this.props.styling}`}>
+                  @{this.props.styling}
+                </a>
+              </div>
+            ) : null}
+
+            {this.props.creative ? (
+              <div>
+                Creative Direction:{' '}
+                <a href={`https://www.instagram.com/${this.props.creative}`}>
+                  @{this.props.creative}
+                </a>
+              </div>
+            ) : null}
+
+            {this.props.model ? (
+              <div>
+                Model:{' '}
+                <a href={`https://www.instagram.com/${this.props.model}`}>
+                  @{this.props.model}
+                </a>
+              </div>
+            ) : null}
           </div>
         </div>
-        <div className="max-w-lg h-fit flex overflow-hidden relative">
+        <div className="mt-10 max-w-lg h-fit flex overflow-hidden relative">
           <AiOutlineLeft
             onClick={this.prevSlide}
             className="absolute left-0 text-3xl inset-y-1/2 text-white cursor-pointer"

@@ -8,12 +8,7 @@ export default function Home() {
   return (
     <div data-testid="hmpg-1">
       <div className="relative top-0 lg:overflow-hidden">
-        <div className="w-full h-full bg-gray-700 absolute opacity-60" />
-        {/* <div className="w-full h-full absolute lg:top-0 lg:flex lg:text-left">
-          <div className="hidden logo text-gray-600 font-medium text-right text-xl mt-5 mr-4 lg:text-gray-600 lg:text-6xl lg:block">
-            ICE COLEYY
-          </div>
-        </div> */}
+        {/* <div className="w-full h-full bg-gray-700 absolute opacity-40" /> */}
 
         <div className="justify-center min-h-screen lg:flex lg:min-h-screen">
           <img
@@ -28,28 +23,28 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="per flex absolute right-6 bottom-20 lg:bottom-20 lg:right-12">
+      <div className="per flex absolute right-12 bottom-20 lg:bottom-20 lg:right-12">
         <a
           href="https://www.instagram.com/ice.coleyy/"
           target="_blank"
           rel="noreferrer"
-          className="pb-8 hover:drop-shadow-md hover:brightness-125 lg:pb-6"
+          className="pb-6 hover:drop-shadow-md hover:brightness-125 lg:pb-6"
         >
           <AiFillInstagram size={40} color="purple" />
         </a>
-        <div className="text-gray-600 text-4xl pb-10 lg:pb-8 lg:text-3xl hover:text-gray-700 lg:hover:text-white">
+        <div className="text-gray-400 text-3xl pb-10 lg:pb-8 lg:text-3xl lg:hover:text-gray-700">
           <Link to="/gallery">GALLERY</Link>
         </div>
-        <div className="text-gray-600 text-4xl hover:text-gray-700 lg:text-3xl lg:hover:text-white">
+        <div className="text-gray-400 text-3xl hover:text-gray-700 lg:text-3xl lg:hover:text-gray-700">
           <Link to="/contact">CONTACT</Link>
         </div>
       </div>
       <ScrollLink className="active hover:cursor-pointer" to="about" spy={true} smooth={true}>
-        <div className="invisible lg:visible mon absolute text-gray-600 text-3xl right-32 bottom-6 hover:text-white uppercase">L e a r n<span className="pl-4 pr-4"/>M o r e</div>
+        <div className="invisible lg:visible mon absolute text-gray-400 text-3xl right-32 bottom-6 lg:hover:text-gray-700 uppercase">L e a r n<span className="pl-4 pr-4"/>M o r e</div>
         <AiOutlineCaretDown
-          size={40}
+          size={35}
           color="purple"
-          className="absolute right-6 bottom-6 lg:right-12"
+          className="absolute right-12 bottom-6 lg:right-12"
         />
       </ScrollLink>
 
@@ -79,7 +74,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className="text-xs text-center pt-20 pl-4 pb-8 pr-4">
+      <div className="text-xs text-center pt-38 pl-4 pb-8 pr-4">
         <p>
           Copyright©2021 Cole Edwards, All Rights Reserved. All material on this
           site may not be reproduced, distributed, cached or otherwise used,

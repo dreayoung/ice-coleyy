@@ -79,7 +79,7 @@ export default function Gallery() {
               alt="coor"
               className="rounded-full ring ring-gray-200 w-32 h-32 lg:w-44 lg:h-44"
             />
-            <div className="bb opacity-0 text-xs hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-sm text-white font-semibold hover:cursor-pointer">
+            <div className="sub opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-sm text-white font-semibold hover:cursor-pointer">
               HTA x Hoodstyle Hub
             </div>
           </div>
@@ -96,7 +96,7 @@ export default function Gallery() {
               alt="photoshoot"
               className="rounded-full ring ring-gray-200 w-32 h-32  lg:w-44 lg:h-44"
             />
-            <div className="invisible lg:visible opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-sm text-white font-semibold hover:cursor-pointer">
+            <div className="sub opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-sm text-white font-semibold hover:cursor-pointer">
               SHOW MUST GO ON
             </div>
           </div>
@@ -219,7 +219,6 @@ export default function Gallery() {
         </ScrollLink>
       </div>
 
-
       <Slider
         imgs={GalleryPageImages.hta_hoodstyle}
         shoot="HTA x Hoodstyle Hub"
@@ -233,28 +232,58 @@ export default function Gallery() {
         imgs={GalleryPageImages.the_office}
         shoot="The Office"
         id_name="the_office"
+        photographer=""
+        styling=""
+        creative=""
+        model=""
       />
       <Slider
         imgs={GalleryPageImages.no_remorse}
         shoot="No Remorse"
         id_name="no_remorse"
+        photographer="stunnamuseum"
+        styling="herotoall"
+        creative={(['stunnamusuem'], ['ice.coleyy'])}
+        model={(['ice.coleyy'], ['kelz2busy'])}
       />
       <Slider
         imgs={GalleryPageImages.show_must_go_on}
         shoot="Show Must Go On"
         id_name="smgo"
+        photographer="spookyrock"
+        styling=""
+        creative={(['spookyrock'], ['ice.coleyy'])}
+        model={['ice.coleyy']}
       />
-      <Slider imgs={GalleryPageImages.tiied} shoot="Tiied" id_name="tiied" />
+      <Slider
+        imgs={GalleryPageImages.tiied}
+        shoot="Tiied"
+        id_name="tiied"
+        photographer={(['moiiimagg'], ['digitalsbyzac'])}
+        styling=""
+        creative={['ice.coleyy']}
+        model={['ice.coleyy']}
+      />
       <Slider
         imgs={GalleryPageImages.dominatrix}
         shoot="Dominatrix"
         id_name="dominatrix"
+        //          no credits
       />
-      <Slider imgs={GalleryPageImages.colors} shoot="Colors" id_name="colors" />
+      <Slider
+        imgs={GalleryPageImages.colors}
+        shoot="Colors"
+        id_name="colors"
+//            no credits
+      />
       <Slider
         imgs={GalleryPageImages.overtime}
         shoot="Overtime Fits"
         id_name="overtime"
+        photographer={['davidhjacobson']}
+        styling="overtimefits"
+        creative=""
+        model={['ice.coleyy']}
       />
       <div className="text-xs text-center border p-4">
         <p>

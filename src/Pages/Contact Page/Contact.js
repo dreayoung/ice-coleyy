@@ -47,7 +47,7 @@ export default function Contact() {
                   <div className="grid grid-cols-3 gap-6">
                     <div className="col-span-3 sm:col-span-2">
                       <label
-                        className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                        className="bb block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                         for="grid-first-name"
                       >
                         Full Name
@@ -57,7 +57,6 @@ export default function Contact() {
                         id="grid-first-name"
                         type="text"
                         name="full_name"
-                        placeholder="Jane"
                       />
                       <p className="text-red-500 text-xs italic">
                         Please fill out this field.
@@ -68,7 +67,7 @@ export default function Contact() {
                   <div className="flex flex-wrap -mx-3 mb-6">
                     <div className="w-full px-3">
                       <label
-                        className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                        className="bb block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                         for="grid-password"
                       >
                         E-mail
@@ -87,7 +86,7 @@ export default function Contact() {
                   <div className="flex flex-wrap -mx-3 mb-6">
                     <div className="w-full px-3">
                       <label
-                        className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                        className="bb block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                         for="grid-password"
                       >
                         Message
