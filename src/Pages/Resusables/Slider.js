@@ -57,7 +57,11 @@ class Slider extends Component {
           <div className="bb">
             <div>
               Photgrapher:{' '}
-              <a href={`https://www.instagram.com/${this.props.photographer}`} target="_blank">
+              <a
+                href={`https://www.instagram.com/${this.props.photographer}`}
+                target="_blank"
+                rel="noopener"
+              >
                 @{this.props.photographer}
               </a>
             </div>
