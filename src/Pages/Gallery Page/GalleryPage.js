@@ -56,9 +56,9 @@ export default function Gallery() {
         <div className="bb hidden lg:block absolute text-2xl right-32 top-96">
           Take a look inside my thoughts..
         </div>
-        <div className="bb visible absolute text-l left-20 bottom-8 lg:text-l lg:top-96 lg:left-[420px] lg:text-neutral-800">
+        {/* <div className="bb visible absolute text-l left-20 bottom-8 lg:text-l lg:top-96 lg:left-[420px] lg:text-neutral-800">
           click here for more photos
-        </div>
+        </div> */}
       </div>
 
       <div className="grid grid-cols-2 gap-10 mt-10 px-12 justify-center lg:mx-auto">
