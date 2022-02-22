@@ -60,7 +60,7 @@ class Slider extends Component {
               <a
                 href={`https://www.instagram.com/${this.props.photographer}`}
                 target="_blank"
-                rel="noopener"
+                rel="noreferrer"
               >
                 @{this.props.photographer}
               </a>
