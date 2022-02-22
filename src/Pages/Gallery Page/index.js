@@ -4,6 +4,7 @@ const GalleryPageImages = {
     require('./Images/HTA_x_HoodstyleHub_photoshoot/HTA (3).jpg'),
     require('./Images/HTA_x_HoodstyleHub_photoshoot/HTA (4).jpg'),
     require('./Images/HTA_x_HoodstyleHub_photoshoot/HTA (5).jpg'),
+    // require('./Images/HTA_x_HoodstyleHub_photoshoot/HTA credits.png')
   ],
   the_office: [
     require('./Images/the_office/stand.jpg'),
@@ -57,47 +58,16 @@ const GalleryPageImages = {
     require('./Images/ShowMustGoOn/Smgo2.jpg'),
     require('./Images/ShowMustGoOn/Smgo3.jpg'),
     require('./Images/ShowMustGoOn/Smgo4.jpg'),
+  ],
+  grounded: [
+    require('./Images/Grounded/Grounded (1).jpg'),
+    require('./Images/Grounded/Grounded (2).jpg'),
+    require('./Images/Grounded/Grounded (3).jpg'),
+    require('./Images/Grounded/Grounded (4).jpg'),
+    require('./Images/Grounded/Grounded (5).jpg'),
+    require('./Images/Grounded/Grounded (6).jpg')
   ]
 };
 
-// const the_office_images = Object.values(GalleryPageImages.the_office).map(
-//   (x) => {
-//     return x;
-//   }
-// );
-// const tiied_images = Object.values(GalleryPageImages.tiied).map((x) => {
-//   return x;
-// });
-
-// const overtime_images = Object.values(GalleryPageImages.overtime).map((x) => {
-//   return x;
-// });
-
-// const no_remorse_images = Object.values(GalleryPageImages.no_remorse).map((x) => {
-//     return x;
-//   });
-
-// const dominatrix_images = Object.values(GalleryPageImages.dominatrix).map((x) => {
-//     return x;
-//   }); 
-
-//   const colors_images = Object.values(GalleryPageImages.colors).map((x) => {
-//     return x;
-//   });  
-
-//   const show_must_go_on_images = Object.values(GalleryPageImages.show_must_go_on).map((x) => {
-//     return x;
-//   }); 
-
   export default GalleryPageImages
 
-// export {
-//   hta_hoodstyle_images,
-//   the_office_images,
-//   tiied_images,
-//   overtime_images,
-//   no_remorse_images,
-//   dominatrix_images,
-//   colors_images,
-//   show_must_go_on_images
-// };

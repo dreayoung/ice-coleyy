@@ -1,61 +1,141 @@
-import React, { useState } from 'react';
-import { AiOutlineCaretRight, AiOutlineCaretLeft } from 'react-icons/ai';
+import React, { Component } from 'react';
+import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
+// import GalleryPageImages from '../Gallery Page/index'
+import Swipe from 'react-easy-swipe';
 
-let count = 0;
-export default function Slider({ id_name, imgs, shoot }) {
-  const [currentIndex, setCurrentIndex] = useState(0);
+class Slider extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentSlide: 0,
+      paused: false,
+    };
+  }
 
-  const onNextClick = () => {
-    count = (count + 1) % imgs.length;
-    setCurrentIndex(count);
+  componentDidMount() {
+    setInterval(() => {
+      if (this.state.paused === false) {
+        let newSlide =
+          this.state.currentSlide === this.props.imgs.length - 1
+            ? 0
+            : this.state.currentSlide + 1;
+        this.setState({ currentSlide: newSlide });
+      }
+    }, 3000);
+  }
+
+  nextSlide = () => {
+    let newSlide =
+      this.state.currentSlide === this.props.imgs.length - 1
+        ? 0
+        : this.state.currentSlide + 1;
+    this.setState({ currentSlide: newSlide });
   };
-  const onPrevClick = () => {
-    const imagesLength = imgs.length;
-    count = currentIndex + imagesLength - (1 % imagesLength);
-    setCurrentIndex(count);
+
+  prevSlide = () => {
+    let newSlide =
+      this.state.currentSlide === 0
+        ? this.props.imgs.length - 1
+        : this.state.currentSlide - 1;
+    this.setState({ currentSlide: newSlide });
   };
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
+  setCurrentSlide = (index) => {
+    this.setState({ currentSlide: index });
   };
 
-  return (
-    <>
-      <div className="mt-96 lg:flex lg:flex-row lg:justify-center lg:items-center lg:mt-40">
-        <div
-          className="mt-28 mr-20 ml-20 text-center"
-          id={id_name}
-        >
-          <div className="heading text-xl pb-2 lg:text-4xl">{shoot}</div>
+  render() {
+    return (
+      <div
+        className="mt-52 lg:flex lg:flex-row lg:justify-center lg:items-center lg:mt-40"
+        id={this.props.id_name}
+      >
+        <div className="lg:mr-20 lg:ml-20 text-center">
+          <div className="heading text-5xl pb-2 lg:text-4xl">
+            {this.props.shoot}
+          </div>
+          <div className="bb">
+            <div>
+              Photgrapher:{' '}
+              <a href={`https://www.instagram.com/${this.props.photographer}`} target="_blank">
+                @{this.props.photographer}
+              </a>
+            </div>
+            <div>
+              Styling:{' '}
+              <a href={`https://www.instagram.com/${this.props.styling}`}>
+                @{this.props.styling}
+              </a>
+            </div>
+            <div>
+              Creative Direction:{' '}
+              <a href={`https://www.instagram.com/${this.props.creative}`}>
+                @{this.props.creative}
+              </a>
+            </div>
+            <div>
+              Model:{' '}
+              <a href={`https://www.instagram.com/${this.props.model}`}>
+                @{this.props.model}
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="max-w-lg h-fit flex overflow-hidden relative">
+          <AiOutlineLeft
+            onClick={this.prevSlide}
+            className="absolute left-0 text-3xl inset-y-1/2 text-white cursor-pointer"
+          />
+
+          <Swipe onSwipeLeft={this.nextSlide} onSwipeRight={this.prevSlide}>
+            {this.props.imgs.map((slide, index) => {
+              return (
+                <img
+                  src={slide}
+                  alt="This is a carousel slide"
+                  key={index}
+                  className={
+                    index === this.state.currentSlide
+                      ? 'block w-full h-auto object-cover'
+                      : 'hidden'
+                  }
+                  onMouseEnter={() => {
+                    this.setState({ paused: true });
+                  }}
+                  onMouseLeave={() => {
+                    this.setState({ paused: false });
+                  }}
+                />
+              );
+            })}
+          </Swipe>
+
+          <div className="absolute w-full flex justify-center bottom-10">
+            {this.props.imgs.map((element, index) => {
+              return (
+                <div
+                  className={
+                    index === this.state.currentSlide
+                      ? 'h-2 w-2 bg-ice-green rounded-full mx-2 mb-2 cursor-pointer'
+                      : 'h-2 w-2 bg-white rounded-full mx-2 mb-2 cursor-pointer'
+                  }
+                  key={index}
+                  onClick={() => {
+                    this.setCurrentSlide(index);
+                  }}
+                ></div>
+              );
+            })}
+          </div>
+
+          <AiOutlineRight
+            onClick={this.nextSlide}
+            className="absolute right-0 text-3xl inset-y-1/2 text-white cursor-pointer"
+          />
         </div>
       </div>
-      <div className="w-fit relative lg:w-4/12 lg:flex lg:justify-center lg:mx-auto">
-        <div className="aspect-w-6 aspect-h-9">
-          <img src={imgs[currentIndex]} alt={shoot} />
-        </div>
-
-        <div className="absolute w-full top-1/2 transform px-8 lg:px-0 flex justify-between items-center">
-          <button onClick={onPrevClick} className="bg-ice-green rounded-full w-30 p-2" >
-            <AiOutlineCaretLeft size={30}/>
-          </button>
-          <button onClick={onNextClick} className="bg-ice-green rounded-full w-30 p-2">
-            <AiOutlineCaretRight size={30} />
-          </button>
-        </div>
-      </div>
-
-      <div className="text-center">
-        <button
-          type="button"
-          onClick={scrollToTop}
-          className="mt-2 mb-8 ml-6 ml-4 inline-flex items-center px-4 py-2 border border-ice-green rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
-        >
-          back to wheel
-        </button>
-      </div>
-    </>
-  );
+    );
+  }
 }
+
+export default Slider;
