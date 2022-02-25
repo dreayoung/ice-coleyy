@@ -4,7 +4,6 @@ const GalleryPageImages = {
     require('./Images/HTA_x_HoodstyleHub_photoshoot/HTA (3).jpg'),
     require('./Images/HTA_x_HoodstyleHub_photoshoot/HTA (4).jpg'),
     require('./Images/HTA_x_HoodstyleHub_photoshoot/HTA (5).jpg'),
-    // require('./Images/HTA_x_HoodstyleHub_photoshoot/HTA credits.png')
   ],
   the_office: [
     require('./Images/the_office/stand.jpg'),
@@ -77,14 +76,6 @@ const GalleryPageImages = {
     require('./Images/Cage/Cage (2).jpg'),
     require('./Images/Cage/Cage (3).jpg'),
     require('./Images/Cage/Cage (4).jpg')
-  ],
-  grounded: [
-    require('./Images/Grounded/Grounded (1).jpg'),
-    require('./Images/Grounded/Grounded (2).jpg'),
-    require('./Images/Grounded/Grounded (3).jpg'),
-    require('./Images/Grounded/Grounded (4).jpg'),
-    require('./Images/Grounded/Grounded (5).jpg'),
-    require('./Images/Grounded/Grounded (6).jpg')
   ],
   yasapothecary: [
     require('./Images/Yasapothecary/27B0A6F3-C602-489D-BBDD-704DF3735DD4.JPG'),
