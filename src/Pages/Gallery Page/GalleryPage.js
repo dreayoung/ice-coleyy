@@ -62,7 +62,7 @@ export default function Gallery() {
       </div>
 
       <div className="grid grid-cols-2 gap-10 ml-2 mt-10 px-12 justify-center md:ml-44 lg:mx-auto">
-      <ScrollLink
+        <ScrollLink
           activeClass="active"
           to="the_office"
           spy={true}
@@ -80,7 +80,7 @@ export default function Gallery() {
           </div>
         </ScrollLink>
 
-      <ScrollLink activeClass="active" to="tiiied" spy={true} smooth={true}>
+        <ScrollLink activeClass="active" to="tiiied" spy={true} smooth={true}>
           <div className="deg-45 w-32 h-32  lg:w-44 lg:h-44 rounded-full hover:animate-pulse">
             <div className="w-32 h-32  lg:w-44 lg:h-44 rounded-full absolute opacity-40 cursor-pointer" />
             <img
@@ -108,7 +108,7 @@ export default function Gallery() {
           </div>
         </ScrollLink>
 
-      <ScrollLink activeClass="active" to="yas" spy={true} smooth={true}>
+        <ScrollLink activeClass="active" to="yas" spy={true} smooth={true}>
           <div className="deg-135 w-32 h-32  lg:w-44 lg:h-44 rounded-full hover:animate-pulse">
             <div className="w-32 h-32  lg:w-44 lg:h-44 rounded-full absolute opacity-40 cursor-pointer" />
             <img
@@ -121,7 +121,6 @@ export default function Gallery() {
             />
           </div>
         </ScrollLink>
-
 
         <ScrollLink
           activeClass="active"
@@ -155,7 +154,6 @@ export default function Gallery() {
             />
           </div>
         </ScrollLink>
-
 
         <ScrollLink className="active" to="colors" spy={true} smooth={true}>
           <div className="deg-315 w-32 h-32  lg:w-44 lg:h-44 rounded-full hover:animate-pulse">
@@ -192,15 +190,6 @@ export default function Gallery() {
       </div>
 
       <Slider
-        imgs={GalleryPageImages.hta_hoodstyle}
-        shoot="HTA x Hoodstyle Hub"
-        id_name="HTA_x_HoodstyleHub"
-        photographer={['kaiireloaded', 'dreaaa']}
-        styling={['herotoall']}
-        creative={['kw33n__t.y']}
-        model={['ice.coleyy', 'yangstarrrrrrr']}
-      />
-      <Slider
         imgs={GalleryPageImages.the_office}
         shoot="The Office"
         id_name="the_office"
@@ -209,15 +198,17 @@ export default function Gallery() {
         creative={['sohqu']}
         model={['ice.coleyy']}
       />
+
       <Slider
-        imgs={GalleryPageImages.no_remorse}
-        shoot="No Remorse"
-        id_name="no_remorse"
-        photographer={['curatorstun']}
+        imgs={GalleryPageImages.tiied}
+        shoot="Tiiied"
+        id_name="tiiied"
+        photographer={['moiiimagg', 'digitalsbyzac']}
         styling={['ice.coleyy']}
-        creative={['curatorstun', 'ice.coleyy']}
-        model={['ice.coleyy', 'kelz2busy']}
+        creative={['ice.coleyy']}
+        model={['ice.coleyy']}
       />
+
       <Slider
         imgs={GalleryPageImages.show_must_go_on}
         shoot="Show Must Go On"
@@ -227,24 +218,35 @@ export default function Gallery() {
         creative={['spookyrock', 'ice.coleyy']}
         model={['ice.coleyy']}
       />
+
       <Slider
-        imgs={GalleryPageImages.tiied}
-        shoot="Tiiied"
-        id_name="tiied"
-        photographer={['moiiimagg', 'digitalsbyzac']}
-        styling={['ice.coleyy']}
-        creative={['ice.coleyy']}
+        imgs={GalleryPageImages.yasapothecary}
+        id_name="yas"
+        shoot="Yasapothecary"
+        photographer={['curatorstun']}
+        creative={['yasapothecary']}
         model={['ice.coleyy']}
       />
+
       <Slider
-        imgs={GalleryPageImages.dominatrix}
-        shoot="Dominatrix"
-        id_name="dominatrix"
-        photographer={['spookyrock']}
-        styling={['ice.coleyy', 'loca_luca_']}
-        creative={['ice.coleyy', 'loca_luca_']}
-        model={['ice.coleyy', 'loca_luca_']}
+        imgs={GalleryPageImages.no_remorse}
+        shoot="No Remorse"
+        id_name="no_remorse"
+        photographer={['curatorstun']}
+        styling={['ice.coleyy']}
+        creative={['curatorstun', 'ice.coleyy']}
+        model={['ice.coleyy', 'kelz2busy']}
       />
+
+      <Slider
+        imgs={GalleryPageImages.grounded}
+        id_name="grounded"
+        shoot="Grounded"
+        photographer={['crzywthacanon']}
+        creative={['ice.coleyy']}
+        model={['jayxbby', 'gabi.len', 'ice.coleyy', 'p.kayys', 'parisfoy']}
+      />
+
       <Slider
         imgs={GalleryPageImages.colors}
         shoot="Colors - Indigo"
@@ -254,6 +256,34 @@ export default function Gallery() {
         creative={['thetruepoppy']}
         model={['ice.coleyy']}
       />
+
+      <Slider
+        imgs={GalleryPageImages.dominatrix}
+        shoot="Dominatrix"
+        id_name="dominatrix"
+        photographer={['spookyrock']}
+        styling={['ice.coleyy', 'loca_luca_']}
+        creative={['ice.coleyy', 'loca_luca_']}
+        model={['ice.coleyy', 'loca_luca_']}
+      />
+
+      <Slider
+        imgs={GalleryPageImages.fresh2death}
+        shoot="UGN Showcase"
+        photographer={['theboyniko']}
+        runway="237ent"
+        styling={['svdboysin', 'stonedrangers', 'merakim2017', 'ai.madethis']}
+        model={['ice.coleyy']}
+      />
+
+      <Slider
+        imgs={GalleryPageImages.cage}
+        shoot="Cage"
+        photographer={['tcshotit']}
+        creative={['ice.coleyy']}
+        model={['ice.coleyy']}
+      />
+
       <Slider
         imgs={GalleryPageImages.overtime}
         shoot="OT Fits"
@@ -265,41 +295,20 @@ export default function Gallery() {
       />
 
       <Slider
+        imgs={GalleryPageImages.hta_hoodstyle}
+        shoot="HTA x Hoodstyle Hub"
+        id_name="HTA_x_HoodstyleHub"
+        photographer={['kaiireloaded', 'dreaaa']}
+        styling={['herotoall']}
+        creative={['kw33n__t.y']}
+        model={['ice.coleyy', 'yangstarrrrrrr']}
+      />
+
+      <Slider
         imgs={GalleryPageImages.hold_on_me}
         shoot="Hold on me"
         photographer={['madewithnyc']}
         creative={['madewithnyc', 'ice.coleyy']}
-        model={['ice.coleyy']}
-      />
-      <Slider
-        imgs={GalleryPageImages.cage}
-        shoot="Cage"
-        photographer={['tcshotit']}
-        creative={['ice.coleyy']}
-        model={['ice.coleyy']}
-      />
-      <Slider
-        imgs={GalleryPageImages.grounded}
-        id_name="grounded"
-        shoot="Grounded"
-        photographer={['crzywthacanon']}
-        creative={['ice.coleyy']}
-        model={['jayxbby', 'gabi.len', 'ice.coleyy', 'p.kayys', 'parisfoy']}
-      />
-      <Slider
-        imgs={GalleryPageImages.yasapothecary}
-        id_name="yas"
-        shoot="Yasapothecary"
-        photographer={['curatorstun']}
-        creative={['yasapothecary']}
-        model={['ice.coleyy']}
-      />
-      <Slider
-        imgs={GalleryPageImages.fresh2death}
-        shoot="UGN Showcase"
-        photographer={['theboyniko']}
-        runway='237ent'
-        styling={['svdboysin', 'stonedrangers', 'merakim2017', 'ai.madethis']}
         model={['ice.coleyy']}
       />
 

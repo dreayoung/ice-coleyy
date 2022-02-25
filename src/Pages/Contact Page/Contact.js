@@ -56,11 +56,11 @@ export default function Contact() {
             <form ref={form} onSubmit={sendEmail}>
               <div className="shadow sm:rounded-md sm:overflow-hidden">
                 <div className="px-4 py-5 bg-white space-y-6 sm:p-6">
-                {status === 'SUCCESS' ? (
-                      <div className="px-4 py-3 leading normal text-center text-ice-green bg-gray-100 rounded-full">
-                        <p>your message has been sent!</p>
-                      </div>
-                    ) : null}
+                  {status === 'SUCCESS' ? (
+                    <div className="px-4 py-3 leading normal text-center text-ice-green bg-gray-100 rounded-full">
+                      <p>your message has been sent!</p>
+                    </div>
+                  ) : null}
                   <div className="grid grid-cols-3 gap-6">
                     <div className="col-span-3 sm:col-span-2">
                       <label
@@ -75,9 +75,6 @@ export default function Contact() {
                         type="text"
                         name="full_name"
                       />
-                      <p className="text-red-500 text-xs italic">
-                        Please fill out this field.
-                      </p>
                     </div>
                   </div>
 
@@ -95,9 +92,6 @@ export default function Contact() {
                         type="email"
                         name="email"
                       />
-                      <p className="text-red-500 text-xs italic">
-                        Please fill out this field.
-                      </p>
                     </div>
                   </div>
                   <div className="flex flex-wrap -mx-3 mb-6">
