@@ -13,17 +13,17 @@ export default function Home() {
         <div className="justify-center min-h-screen lg:flex lg:min-h-screen">
           <img
             src={process.env.PUBLIC_URL + '/Headshot2.jpg'}
-            className="w-[310px] h-[420px] lg:w-[600px] lg:h-[720px] lg:pt-10"
+            className="w-[310px] h-[420px] lg:w-[500px] lg:h-[620px] lg:pt-10"
             alt="Ice Colley HeadShot2"
           />
           <img
             src={process.env.PUBLIC_URL + '/Headshot1.jpg'}
-            className="w-[310px] h-[420px] lg:w-[600px] lg:h-[720px] lg:pt-10"
+            className="w-[310px] h-[420px] lg:w-[500px] lg:h-[620px] lg:pt-10"
             alt="Ice Colley HeadShot1"
           />
         </div>
       </div>
-      <div className="per flex absolute right-6 bottom-20 lg:bottom-20 lg:right-12">
+      <div className="per flex absolute right-6 bottom-20 lg:bottom-28 lg:right-20">
         <a
           href="https://www.instagram.com/ice.coleyy/"
           target="_blank"
@@ -45,13 +45,13 @@ export default function Home() {
         spy={true}
         smooth={true}
       >
-        <div className="invisible lg:visible mon absolute text-gray-400 text-3xl right-32 bottom-6 lg:hover:text-gray-700 uppercase">
+        <div className="invisible lg:visible mon absolute text-gray-400 text-3xl right-36 bottom-12 lg:hover:text-gray-700 uppercase">
           L e a r n<span className="pl-4 pr-4" />M o r e
         </div>
         <AiOutlineCaretDown
           size={35}
           color="purple"
-          className="absolute right-6 bottom-6 hover:brightness-150 lg:right-12"
+          className="absolute right-6 bottom-6 hover:brightness-150 lg:right-20 lg:bottom-12"
         />
       </ScrollLink>
 

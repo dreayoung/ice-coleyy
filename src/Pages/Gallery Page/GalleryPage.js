@@ -199,44 +199,44 @@ export default function Gallery() {
         imgs={GalleryPageImages.hta_hoodstyle}
         shoot="HTA x Hoodstyle Hub"
         id_name="HTA_x_HoodstyleHub"
-        photographer="kaiireloaded"
-        styling="herotoall"
-        creative="kw33n__t.y"
-        model={(['ice.coleyy'], ['yangstarrrrrrr'])}
+        photographer={['kaiireloaded', 'dreaaa']}
+        styling={['herotoall']}
+        creative={['kw33n__t.y']}
+        model={['ice.coleyy', 'yangstarrrrrrr']}
       />
       <Slider
         imgs={GalleryPageImages.the_office}
         shoot="The Office"
         id_name="the_office"
-        photographer=""
-        styling=""
-        creative=""
-        model=""
+        photographer={['moiiimagg']}
+        styling={['ice.coleyy', 'sohqu']}
+        creative={['sohqu']}
+        model={['ice.coleyy']}
       />
       <Slider
         imgs={GalleryPageImages.no_remorse}
         shoot="No Remorse"
         id_name="no_remorse"
-        photographer="stunnamuseum"
-        styling="herotoall"
-        creative={(['stunnamusuem'], ['ice.coleyy'])}
-        model={(['ice.coleyy'], ['kelz2busy'])}
+        photographer={['curatorstun']}
+        styling={['ice.coleyy']}
+        creative={['curatorstun', 'ice.coleyy']}
+        model={['ice.coleyy', 'kelz2busy']}
       />
       <Slider
         imgs={GalleryPageImages.show_must_go_on}
         shoot="Show Must Go On"
         id_name="smgo"
-        photographer="spookyrock"
-        styling=""
-        creative={(['spookyrock'], ['ice.coleyy'])}
+        photographer={['spookyrock']}
+        styling={['ice.coleyy']}
+        creative={['spookyrock', 'ice.coleyy']}
         model={['ice.coleyy']}
       />
       <Slider
         imgs={GalleryPageImages.tiied}
         shoot="Tiied"
         id_name="tiied"
-        photographer={(['moiiimagg'], ['digitalsbyzac'])}
-        styling=""
+        photographer={['moiiimagg', 'digitalsbyzac']}
+        styling={['ice.coleyy']}
         creative={['ice.coleyy']}
         model={['ice.coleyy']}
       />
@@ -244,23 +244,67 @@ export default function Gallery() {
         imgs={GalleryPageImages.dominatrix}
         shoot="Dominatrix"
         id_name="dominatrix"
-        //          no credits
+        photographer={['spookyrock']}
+        styling={['ice.coleyy', 'loca_luca_']}
+        creative={['ice.coleyy', 'loca_luca_']}
+        model={['ice.coleyy', 'loca_luca_']}
       />
       <Slider
         imgs={GalleryPageImages.colors}
-        shoot="Colors"
+        shoot="Colors - Indigo"
         id_name="colors"
-        //            no credits
+        photographer={['thetruepoppy']}
+        styling={['ice.coleyy']}
+        creative={['thetruepoppy']}
+        model={['ice.coleyy']}
       />
       <Slider
         imgs={GalleryPageImages.overtime}
-        shoot="Overtime Fits"
+        shoot="OT Fits"
         id_name="overtime"
         photographer={['davidhjacobson']}
-        styling="overtimefits"
-        creative=""
+        styling={['overtimefits']}
+        creative={['overtimefits']}
         model={['ice.coleyy']}
       />
+
+      <Slider
+        imgs={GalleryPageImages.hold_on_me}
+        shoot="Hold on me"
+        photographer={['madewithnyc']}
+        creative={['madewithnyc', 'ice.coleyy']}
+        model={['ice.coleyy']}
+      />
+      <Slider
+        imgs={GalleryPageImages.cage}
+        shoot="Cage"
+        photographer={['tcshotit']}
+        creative={['ice.coleyy']}
+        model={['ice.coleyy']}
+      />
+      <Slider
+        imgs={GalleryPageImages.grounded}
+        shoot="Grounded"
+        photographer={['crzywthacanon']}
+        creative={['ice.coleyy']}
+        model={['jayxbby', 'gabi.len', 'ice.coleyy', 'p.kayys', 'parisfoy']}
+      />
+      <Slider
+        imgs={GalleryPageImages.yasapothecary}
+        shoot="Yasapothecary"
+        photographer={['curatorstun']}
+        creative={['yasapothecary']}
+        model={['ice.coleyy']}
+      />
+      <Slider
+        imgs={GalleryPageImages.fresh2death}
+        shoot="UGN Showcase"
+        photographer={['theboyniko']}
+        runway='237ent'
+        styling={['svdboysin', 'stonedrangers', 'merakim2017', 'ai.madethis']}
+        model={['ice.coleyy']}
+      />
+
       <div className="text-xs text-center border p-28">
         <p>
           Copyright©2021 Cole Edwards, All Rights Reserved. All material on this

@@ -56,14 +56,35 @@ class Slider extends Component {
           <div className="bb text-xs">
             {this.props.photographer ? (
               <div>
-                Photgrapher:{' '}
+                Photgraphers:{' '}
+                {this.props.photographer.map((name, x) => {
+                  return (
+                    <a
+                      href={`https://www.instagram.com/${name}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="hover:underline hover:decoration-wavy"
+                      key={x}
+                    >
+                      @{name}
+                      {'  '}
+                    </a>
+                  );
+                })}
+              </div>
+            ) : null}
+
+            {this.props.runway ? (
+              <div>
+                Runway:{' '}
                 <a
-                  href={`https://www.instagram.com/${this.props.photographer}`}
+                  href={`https://www.instagram.com/${this.props.runway}`}
                   target="_blank"
                   rel="noreferrer"
                   className="hover:underline hover:decoration-wavy"
                 >
-                  @{this.props.photographer}
+                  @{this.props.runway}
+                  {'  '}
                 </a>
               </div>
             ) : null}
@@ -71,42 +92,60 @@ class Slider extends Component {
             {this.props.styling ? (
               <div>
                 Styling:{' '}
-                <a
-                  href={`https://www.instagram.com/${this.props.styling}`}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:underline hover:decoration-wavy"
-                >
-                  @{this.props.styling}
-                </a>
+                {this.props.styling.map((name, x) => {
+                  return (
+                    <a
+                      href={`https://www.instagram.com/${name}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="hover:underline hover:decoration-wavy"
+                      key={x}
+                    >
+                      @{name}
+                      {'  '}
+                    </a>
+                  );
+                })}
               </div>
             ) : null}
 
             {this.props.creative ? (
               <div>
                 Creative Direction:{' '}
-                <a
-                  href={`https://www.instagram.com/${this.props.creative}`}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:underline hover:decoration-wavy"
-                >
-                  @{this.props.creative}
-                </a>
+                {this.props.creative.map((name, x) => {
+                  return (
+                    <a
+                      href={`https://www.instagram.com/${name}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="hover:underline hover:decoration-wavy"
+                      key={x}
+                    >
+                      @{name}
+                      {'  '}
+                    </a>
+                  );
+                })}
               </div>
             ) : null}
 
             {this.props.model ? (
               <div>
-                Model:{' '}
-                <a
-                  href={`https://www.instagram.com/${this.props.model}`}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:underline hover:decoration-wavy"
-                >
-                  @{this.props.model}
-                </a>
+                Models:{' '}
+                {this.props.model.map((name, x) => {
+                  return (
+                    <a
+                      href={`https://www.instagram.com/${name}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="hover:underline hover:decoration-wavy"
+                      key={x}
+                    >
+                      @{name}
+                      {'  '}
+                    </a>
+                  );
+                })}
               </div>
             ) : null}
           </div>
