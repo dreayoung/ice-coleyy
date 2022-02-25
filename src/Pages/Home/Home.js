@@ -10,7 +10,7 @@ export default function Home() {
       <div className="relative top-0 lg:overflow-hidden">
         <div className="w-full h-full bg-gray-700 absolute opacity-20" />
         <div className="w-full h-full absolute lg:top-0 lg:flex lg:text-left">
-          <div className="logo text-gray-400 ml-4 font-medium text-xl mt-96 mr-4 lg:text-gray-600 lg:text-4xl lg:ml-8">
+          <div className="logo text-gray-400 ml-4 font-medium text-xl mt-96 mr-4 lg:text-gray-600 lg:text-4xl lg:ml-8 lg:mt-6">
             ICE COLEYY
           </div>
         </div>
