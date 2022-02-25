@@ -243,6 +243,7 @@ export default function Gallery() {
         id_name="grounded"
         shoot="Grounded"
         photographer={['crzywthacanon']}
+        styling={['ice.coleyy']}
         creative={['ice.coleyy']}
         model={['jayxbby', 'gabi.len', 'ice.coleyy', 'p.kayys', 'parisfoy']}
       />
@@ -280,6 +281,7 @@ export default function Gallery() {
         imgs={GalleryPageImages.cage}
         shoot="Cage"
         photographer={['tcshotit']}
+        styling={['ice.coleyy']}
         creative={['ice.coleyy']}
         model={['ice.coleyy']}
       />
@@ -308,6 +310,7 @@ export default function Gallery() {
         imgs={GalleryPageImages.hold_on_me}
         shoot="Hold on me"
         photographer={['madewithnyc']}
+        styling={['ice.coleyy']}
         creative={['madewithnyc', 'ice.coleyy']}
         model={['ice.coleyy']}
       />
