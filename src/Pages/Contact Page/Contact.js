@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
+import Footer from '../Resusables/Footer'
 import { AiOutlineMail } from 'react-icons/ai';
 import emailjs from '@emailjs/browser';
 
@@ -46,8 +47,8 @@ export default function Contact() {
               <div className="bg-ice-green rounded-full p-4 w-20 mx-auto">
                 <AiOutlineMail size={30} className="m-2 text-white" />
               </div>
-              <p className="mt-4 text-sm text-gray-600">
-                Don't be shy -- drop me a line, i'll get back to you as soon as
+              <p className="bb mt-8 text-sm text-zinc-400 text-center">
+                Don't be shy -- drop me a line, <br />i'll get back to you as soon as
                 possible!
               </p>
             </div>
@@ -55,7 +56,7 @@ export default function Contact() {
           <div className="mt-5 md:mt-0 md:col-span-2">
             <form ref={form} onSubmit={sendEmail}>
               <div className="shadow sm:rounded-md sm:overflow-hidden">
-                <div className="px-4 py-5 bg-white space-y-6 sm:p-6">
+                <div className="px-4 py-5 bg-black space-y-6 sm:p-6">
                   {status === 'SUCCESS' ? (
                     <div className="px-4 py-3 leading normal text-center text-ice-green bg-gray-100 rounded-full">
                       <p>your message has been sent!</p>
@@ -64,13 +65,13 @@ export default function Contact() {
                   <div className="grid grid-cols-3 gap-6">
                     <div className="col-span-3 sm:col-span-2">
                       <label
-                        className="bb block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                        className="bb block uppercase tracking-wide text-zinc-400 text-xs font-bold mb-2"
                         htmlFor="grid-first-name"
                       >
                         Full Name
                       </label>
                       <input
-                        className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                        className="appearance-none block w-full bg-gray-200 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                         id="grid-first-name"
                         type="text"
                         name="full_name"
@@ -81,7 +82,7 @@ export default function Contact() {
                   <div className="flex flex-wrap -mx-3 mb-6">
                     <div className="w-full px-3">
                       <label
-                        className="bb block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                        className="bb block uppercase tracking-wide text-zinc-400 text-xs font-bold mb-2"
                         htmlFor="grid-password"
                       >
                         E-mail
@@ -97,10 +98,10 @@ export default function Contact() {
                   <div className="flex flex-wrap -mx-3 mb-6">
                     <div className="w-full px-3">
                       <label
-                        className="bb block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                        className="bb block uppercase tracking-wide text-zinc-400 text-xs font-bold mb-2"
                         htmlFor="grid-password"
                       >
-                        Message
+                        Message (please include details of the shoot)
                       </label>
                       <textarea
                         className=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
@@ -126,6 +127,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

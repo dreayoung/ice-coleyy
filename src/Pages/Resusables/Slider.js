@@ -46,7 +46,7 @@ class Slider extends Component {
   render() {
     return (
       <div
-        className="mt-52 lg:flex lg:flex-row lg:justify-center lg:items-center lg:mt-40"
+        className="mt-52 text-white lg:flex lg:flex-row lg:justify-center lg:items-center lg:mt-40"
         id={this.props.id_name}
       >
         <div className="lg:mr-20 lg:ml-20 text-center">
@@ -165,7 +165,7 @@ class Slider extends Component {
                   key={index}
                   className={
                     index === this.state.currentSlide
-                      ? 'block w-full h-auto object-cover'
+                      ? 'block w-3/4 object-cover mx-auto'
                       : 'hidden'
                   }
                   onMouseEnter={() => {
