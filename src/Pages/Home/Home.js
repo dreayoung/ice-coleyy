@@ -142,7 +142,11 @@ export default function Home() {
                   Please include all details of the gig in the “Message” box.
                   <br /> I reply quickly with my rates but standard rates are:
                 </p>
-                <img className="mb-[10px] w-[160px]" src={icon} />
+                <img
+                  className="mb-[10px] w-[160px]"
+                  src={icon}
+                  alt="price icon"
+                />
                 <p className="text-center text-zinc-400 text-xs mt-8 mb-4">
                   {' '}
                   *rates are subject to change after description of the gig*
