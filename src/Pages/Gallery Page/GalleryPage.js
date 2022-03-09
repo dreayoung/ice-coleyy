@@ -227,7 +227,6 @@ export default function Gallery() {
             imgs={GalleryPageImages.colorsOfLux}
             shoot="Colors of Luxury"
             id_name="colors"
-            model={['ice.coleyy']}
             photographer={['shotxtima']}
             creative={['shotxtima', 'fourthebr4nd']}
             model={['ice.coleyy']}
