@@ -1,9 +1,14 @@
 import React from 'react';
 import Footer from '../Resusables/Footer';
-import { AiOutlineMail } from 'react-icons/ai';
+import {
+  AiOutlineMail,
+  AiOutlinePicture,
+  AiOutlineHome,
+  AiOutlineStar,
+} from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 export default function Contact() {
-
   return (
     <>
       <div className="p-10">
@@ -24,11 +29,6 @@ export default function Contact() {
               <input type="hidden" name="form-name" value="contact-form" />
               <div className="shadow sm:rounded-md sm:overflow-hidden">
                 <div className="px-4 py-5 bg-black space-y-6 sm:p-6">
-                  {/* {status === 'SUCCESS' ? (
-                    <div className="px-4 py-3 leading normal text-center text-ice-green ring-1 ring-ice-green rounded-full bg-black ">
-                      <p>Your message has been successfully sent!</p>
-                    </div>
-                  ) : null} */}
                   <div className="grid grid-cols-3 gap-6">
                     <div className="col-span-3 sm:col-span-2">
                       <label
@@ -97,6 +97,29 @@ export default function Contact() {
             </form>
           </div>
         </div>
+      </div>
+      <div className="flex items-center justify-center space-x-4">
+        <Link to="/portfolio">
+          <AiOutlinePicture
+            color="silver"
+            size={50}
+            className="p-2 mb-2 ring-2 rounded-full ring-gray-500 hover:brightness-150"
+          />
+        </Link>
+        <Link to="/highlights">
+          <AiOutlineStar
+            color="silver"
+            size={50}
+            className="p-2 mb-2 ring-2 rounded-full ring-gray-500 hover:brightness-150"
+          />
+        </Link>
+        <Link to="/">
+          <AiOutlineHome
+            color="silver"
+            size={50}
+            className="p-2 mb-2 ring-2 rounded-full ring-gray-500 hover:brightness-150"
+          />
+        </Link>
       </div>
       <Footer />
     </>

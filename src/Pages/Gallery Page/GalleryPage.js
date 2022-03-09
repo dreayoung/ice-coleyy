@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
-import {
-  AiOutlinePhone,
-  AiOutlineHome,
-  AiOutlineArrowUp,
-} from 'react-icons/ai';
+import { AiOutlinePhone, AiOutlineHome, AiTwotoneStar } from 'react-icons/ai';
 import GalleryPageImages from './index';
 import Slider from '../Resusables/Slider';
 import Footer from '../Resusables/Footer';
@@ -22,7 +18,7 @@ export default function Gallery() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
+    setLoading(false);
     setTimeout(() => {
       setLoading(false);
     }, 3000);
@@ -36,38 +32,47 @@ export default function Gallery() {
         </div>
       ) : (
         <>
-          <div className="text-center">
-            <AiOutlineArrowUp
-              onClick={scrollToTop}
-              size={40}
-              className="fixed bottom-2 right-8 border border-ice-green rounded-full p-2 shadow-sm text-sm font-medium text-white bg-black animate-bounce hover:cursor-pointer hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
-            />
-          </div>
           <div className="lg:min-h-screen">
-            <Link to="/contact">
-              <AiOutlinePhone
-                size={60}
-                color="white"
-                className="invisible lg:visible absolute top-[500px] right-60 ring-2 p-2 rounded-full text-gray-700 hover:text-yellow-600 hover:ring-yellow-600 hover:cursor-pointer"
-              />
-              <AiOutlinePhone
-                size={40}
-                color="white"
-                className="visible lg:invisible absolute top-8 right-8 ring-2 p-2 rounded-full ring-gray-500 hover:text-yellow-600 hover:ring-yellow-600 hover:cursor-pointer"
-              />
-            </Link>
-            <Link to="/home">
-              <AiOutlineHome
-                size={60}
-                color="white"
-                className="invisible lg:visible absolute top-[500px] right-80 ring-2 rounded-full p-2 text-gray-700 hover:text-ice-green hover:ring-ice-green hover:cursor-pointer"
-              />
-              <AiOutlineHome
-                size={40}
-                color="white"
-                className="visible lg:invisible absolute top-8 left-8 ring-2 rounded-full p-2 ring-gray-500 hover:text-ice-green hover:ring-ice-green hover:cursor-pointer"
-              />
-            </Link>
+            <div className="lg:flex lg:space-x-20 lg:ml-[1000px]">
+              <Link to="/contact">
+                <AiOutlinePhone
+                  size={60}
+                  color="white"
+                  className="hidden lg:block  absolute top-[500px] ring-2 p-2 rounded-full text-gray-700 hover:brightness-150"
+                />
+                <AiOutlinePhone
+                  size={40}
+                  color="white"
+                  className="block lg:hidden absolute top-8 right-8 ring-2 p-2 rounded-full ring-gray-500 hover:brightness-150"
+                />
+              </Link>
+              <div className="flex lg:space-x-20">
+                <Link to="/home">
+                  <AiOutlineHome
+                    size={60}
+                    color="white"
+                    className="hidden lg:block absolute top-[500px] ring-2 rounded-full p-2 text-gray-700 hover:brightness-150"
+                  />
+                  <AiOutlineHome
+                    size={40}
+                    color="white"
+                    className="block lg:hidden absolute top-8 left-8 ring-2 rounded-full p-2 ring-gray-500 hover:brightness-150"
+                  />
+                </Link>
+                <Link to="/highlights">
+                  <AiTwotoneStar
+                    color="silver"
+                    size={60}
+                    className="hidden lg:block absolute top-[500px] ring-2 rounded-full p-2 text-gray-700 hover:brightness-150"
+                  />
+                  <AiTwotoneStar
+                    color="silver"
+                    size={40}
+                    className="block lg:hidden p-2 mb-2 ring-2 absolute top-8 left-20 rounded-full ring-gray-500 hover:brightness-150"
+                  />
+                </Link>
+              </div>
+            </div>
             <div className="bb text-gray-400 animate-pulse text-l text-center mt-8 lg:text-2xl lg:top-80">
               select an image...
             </div>
@@ -118,16 +123,13 @@ export default function Gallery() {
               </div>
             </ScrollLink>
 
-            <ScrollLink activeClass="active" to="smgo" spy={true} smooth={true}>
-              <div className="deg-90 w-32 h-32  lg:w-44 lg:h-44 rounded-full hover:animate-pulse">
+            <ScrollLink className="active" to="colors" spy={true} smooth={true}>
+              <div className="deg-315 w-32 h-32  lg:w-44 lg:h-44 rounded-full hover:animate-pulse">
                 <div className="w-32 h-32  lg:w-44 lg:h-44 rounded-full absolute opacity-40 cursor-pointer" />
                 <img
-                  src={
-                    process.env.PUBLIC_URL +
-                    '/highlightimagesforgallerypage/Show Must Go On (1).jpg'
-                  }
-                  alt="show must go on photoshoot"
-                  className="rounded-full ring ring-stone-500 w-32 h-32  lg:w-44 lg:h-44"
+                  src={process.env.PUBLIC_URL + '/Headshot1.jpg'}
+                  alt="colors photoshoot"
+                  className="rounded-full ring ring-stone-500 w-32 h-32 lg:w-44 lg:h-44"
                 />
               </div>
             </ScrollLink>
@@ -184,16 +186,16 @@ export default function Gallery() {
               </div>
             </ScrollLink>
 
-            <ScrollLink className="active" to="colors" spy={true} smooth={true}>
-              <div className="deg-315 w-32 h-32  lg:w-44 lg:h-44 rounded-full hover:animate-pulse">
+            <ScrollLink activeClass="active" to="smgo" spy={true} smooth={true}>
+              <div className="deg-90 w-32 h-32  lg:w-44 lg:h-44 rounded-full hover:animate-pulse">
                 <div className="w-32 h-32  lg:w-44 lg:h-44 rounded-full absolute opacity-40 cursor-pointer" />
                 <img
                   src={
                     process.env.PUBLIC_URL +
-                    '/highlightimagesforgallerypage/Colors-Indigo-Cole-4.png'
+                    '/highlightimagesforgallerypage/Show Must Go On (1).jpg'
                   }
-                  alt="colors photoshoot"
-                  className="rounded-full ring ring-stone-500 w-32 h-32 lg:w-44 lg:h-44"
+                  alt="show must go on photoshoot"
+                  className="rounded-full ring ring-stone-500 w-32 h-32  lg:w-44 lg:h-44"
                 />
               </div>
             </ScrollLink>
@@ -223,8 +225,15 @@ export default function Gallery() {
             shoot="The Office"
             id_name="the_office"
             photographer={['moiiimagg']}
-            styling={['ice.coleyy', 'sohqu']}
+            styling={['ice.coleyy']}
             creative={['sohqu']}
+            model={['ice.coleyy']}
+          />
+
+          <Slider
+            imgs={GalleryPageImages.colorsOfLux}
+            shoot="Colors of Luxury"
+            id_name="colors"
             model={['ice.coleyy']}
           />
 
@@ -234,7 +243,7 @@ export default function Gallery() {
             id_name="tiiied"
             photographer={['moiiimagg', 'digitalsbyzac']}
             styling={['ice.coleyy']}
-            creative={['ice.coleyy']}
+            creative={['ice.coleyy', 'moiiimagg', 'digitalsbyzac']}
             model={['ice.coleyy']}
           />
 
@@ -278,16 +287,6 @@ export default function Gallery() {
           />
 
           <Slider
-            imgs={GalleryPageImages.colors}
-            shoot="Colors - Indigo"
-            id_name="colors"
-            photographer={['thetruepoppy']}
-            styling={['ice.coleyy']}
-            creative={['thetruepoppy']}
-            model={['ice.coleyy']}
-          />
-
-          <Slider
             imgs={GalleryPageImages.dominatrix}
             shoot="Dominatrix"
             id_name="dominatrix"
@@ -295,6 +294,16 @@ export default function Gallery() {
             styling={['ice.coleyy', 'loca_luca_']}
             creative={['ice.coleyy', 'loca_luca_']}
             model={['ice.coleyy', 'loca_luca_']}
+          />
+
+          <Slider
+            imgs={GalleryPageImages.colors}
+            shoot="Colors - Indigo"
+            id_name="colors"
+            photographer={['thetruepoppy']}
+            styling={['ice.coleyy']}
+            creative={['thetruepoppy']}
+            model={['ice.coleyy']}
           />
 
           <Slider

@@ -52,6 +52,10 @@ const GalleryPageImages = {
     require('./Images/ColorsProject_Indigo/Colors-Indigo-Cole-16.png'),
     require('./Images/ColorsProject_Indigo/Colors-Indigo-Cole-23.png'),
   ],
+  colorsOfLux: [
+    require('./Images/ColorsOfLux/headshot1.png'),
+    require('./Images/ColorsOfLux/headshot2.png'),
+  ],
   show_must_go_on: [
     require('./Images/ShowMustGoOn/Smgo1.jpg'),
     require('./Images/ShowMustGoOn/Smgo2.jpg'),
@@ -75,22 +79,21 @@ const GalleryPageImages = {
     require('./Images/Cage/Cage (1).jpg'),
     require('./Images/Cage/Cage (2).jpg'),
     require('./Images/Cage/Cage (3).jpg'),
-    require('./Images/Cage/Cage (4).jpg')
+    require('./Images/Cage/Cage (4).jpg'),
   ],
   yasapothecary: [
     require('./Images/Yasapothecary/27B0A6F3-C602-489D-BBDD-704DF3735DD4.JPG'),
     require('./Images/Yasapothecary/683D448C-6D32-4AB5-9C0C-9B754102C70B.JPG'),
     require('./Images/Yasapothecary/21605079-C338-47F2-8E5C-F746D16E7FD7.JPG'),
     require('./Images/Yasapothecary/D2E40559-1946-40FD-B8E8-A2A6BB84F7D4.JPG'),
-    require('./Images/Yasapothecary/D072EF99-B5C5-4719-9A9F-72F166304576.JPG')
+    require('./Images/Yasapothecary/D072EF99-B5C5-4719-9A9F-72F166304576.JPG'),
   ],
   fresh2death: [
     require('./Images/Fresh2Death by Fourthebr4nd/3CD327C1-6A4A-4671-BB1A-43410BF8B565.JPG'),
     require('./Images/Fresh2Death by Fourthebr4nd/AfterlightImage 2.jpeg'),
     require('./Images/Fresh2Death by Fourthebr4nd/AfterlightImage.jpeg'),
-    require('./Images/Fresh2Death by Fourthebr4nd/D8D231D7-FFD2-4640-9DF7-C1A663685613.JPG')
+    require('./Images/Fresh2Death by Fourthebr4nd/D8D231D7-FFD2-4640-9DF7-C1A663685613.JPG'),
   ],
-
 };
 
 export default GalleryPageImages;
