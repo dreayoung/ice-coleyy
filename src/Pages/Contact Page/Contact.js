@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Footer from '../Resusables/Footer';
 import { AiOutlineMail } from 'react-icons/ai';
 
 export default function Contact() {
-  const [status, setStatus] = useState('');
 
   return (
     <>
@@ -25,11 +24,11 @@ export default function Contact() {
               <input type="hidden" name="form-name" value="contact-form" />
               <div className="shadow sm:rounded-md sm:overflow-hidden">
                 <div className="px-4 py-5 bg-black space-y-6 sm:p-6">
-                  {status === 'SUCCESS' ? (
+                  {/* {status === 'SUCCESS' ? (
                     <div className="px-4 py-3 leading normal text-center text-ice-green ring-1 ring-ice-green rounded-full bg-black ">
                       <p>Your message has been successfully sent!</p>
                     </div>
-                  ) : null}
+                  ) : null} */}
                   <div className="grid grid-cols-3 gap-6">
                     <div className="col-span-3 sm:col-span-2">
                       <label
