@@ -8,13 +8,6 @@ import Footer from '../Resusables/Footer';
 import './Gallery.css';
 
 export default function Gallery() {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  };
-
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -234,6 +227,9 @@ export default function Gallery() {
             imgs={GalleryPageImages.colorsOfLux}
             shoot="Colors of Luxury"
             id_name="colors"
+            model={['ice.coleyy']}
+            photographer={['shotxtima']}
+            creative={['shotxtima', 'fourthebr4nd']}
             model={['ice.coleyy']}
           />
 
