@@ -30,65 +30,71 @@ export default function Highlights() {
         />
       </section>
 
-      <div className="bb m-10 grid auto-cols-auto items-center">
-        <div className="bg-black flex flex-col items-center rounded-[10px] p-[10px] shadow ease-in-out">
-          <div className="mon text-gray-600 mb-4 mt-2">237 Showcase</div>
-          <div className="max-w-screen-lg mx-auto flex justify-center pb-10">
-            <ReactPlayer
-              url={showcase237}
-              controls={true}
-              width="300px"
-              height="100%"
-            />
+      <div className="lg:flex lg:ml-28">
+        <div className="bb m-10 grid auto-cols-auto items-center">
+          <div className="bg-black flex flex-col items-center rounded-[10px] p-[10px] shadow ease-in-out">
+            <div className="mon text-gray-600 mb-4 mt-2">237 Showcase</div>
+            <div className="max-w-screen-lg mx-auto flex justify-center pb-10">
+              <ReactPlayer
+                url={showcase237}
+                controls={true}
+                width="300px"
+                height="100%"
+              />
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="bb m-10 grid auto-cols-auto items-center">
-        <div className="bg-black flex flex-col items-center rounded-[10px] p-[10px] shadow ease-in-out">
-          <div className="mon text-gray-600 mb-4 mt-2">
-            {' '}
-            🌟 SESSIONS @herokes
-          </div>
-          <div className="max-w-screen-lg mx-auto flex justify-center pb-10">
-            <ReactPlayer
-              url={sessionsVid}
-              controls={true}
-              width="300px"
-              height="100%"
-            />
+        <div className="bb m-10 grid auto-cols-auto items-center">
+          <div className="bg-black flex flex-col items-center rounded-[10px] p-[10px] shadow ease-in-out">
+            <div className="mon text-gray-600 mb-4 mt-2">
+              {' '}
+              🌟 SESSIONS @herokes
+            </div>
+            <div className="max-w-screen-lg mx-auto flex justify-center pb-10">
+              <ReactPlayer
+                url={sessionsVid}
+                controls={true}
+                width="300px"
+                height="100%"
+              />
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="bb m-10 grid auto-cols-auto items-center">
-        <div className="bg-black flex flex-col items-center rounded-[10px] p-[10px] shadow ease-in-out">
-          <div className="mon text-gray-600 mb-4 mt-2"> POP UP N VIBE</div>
-          <div className="max-w-screen-lg mx-auto flex justify-center mb-10">
-            <ReactPlayer
-              url={popVideo}
-              controls={true}
-              width="300px"
-              height="100%"
-            />
+        <div className="bb m-10 grid auto-cols-auto items-center">
+          <div className="bg-black flex flex-col items-center rounded-[10px] p-[10px] shadow ease-in-out">
+            <div className="mon text-gray-600 mb-4 mt-2"> POP UP N VIBE</div>
+            <div className="max-w-screen-lg mx-auto flex justify-center mb-10">
+              <ReactPlayer
+                url={popVideo}
+                controls={true}
+                width="300px"
+                height="100%"
+              />
+            </div>
           </div>
         </div>
       </div>
 
       <div className="bb mb-44 items-center">
-        <div className="bg-black p-[10px] shadow ease-in-out">
-          <div className="mon text-gray-600 mb-4 mt-4 text-center">
+        <div className="bg-black p-[10px] text-center shadow ease-in-out">
+          <a
+            href="https://www.instagram.com/holyguruu"
+            className="mon text-gray-600 mb-4 mt-4 lg:text-4xl"
+          >
             @HolyGuruu
-          </div>
+          </a>
           <div className="max-w-screen-lg mx-auto flex justify-center w-fit pb-10">
             <img
               src={require('./ARTISTS/holyguruu.png')}
               alt="holyguruu"
-              className="w-[200px] pr-2"
+              className="w-[200px] pr-2 lg:w-[300px]"
             />
             <ReactPlayer
               url={holyg}
               controls={true}
+              className="lg:w-[300px]"
               width="200px"
               height="100%"
             />
@@ -97,10 +103,13 @@ export default function Highlights() {
       </div>
 
       <div className="bb mb-44 items-center">
-        <div className="bg-black p-[10px] shadow ease-in-out">
-          <div className="mon text-gray-600 mb-4 mt-4 text-center">
+        <div className="bg-black p-[10px] shadow ease-in-out text-center">
+          <a
+            href="https://www.instagram.com/yangstaar"
+            className="mon text-gray-600 mb-4 mt-4 lg:text-4xl"
+          >
             @Yangstaar
-          </div>
+          </a>
           <div className="max-w-screen-lg mx-auto flex justify-center w-fit pb-10">
             <img
               src={require('./ARTISTS/youngstar.png')}
@@ -112,15 +121,18 @@ export default function Highlights() {
       </div>
 
       <div className="bb mb-44 items-center">
-        <div className="bg-black p-[10px] shadow ease-in-out">
-          <div className="mon text-gray-600 mb-4 mt-4 text-center">
+        <div className="bg-black p-[10px] shadow ease-in-out text-center">
+          <a
+            href="https://www.instagram.com/hurriharan"
+            className="mon text-gray-600 mb-4 mt-4 lg:text-4xl"
+          >
             @Hurriharan
-          </div>
+          </a>
           <div className="max-w-screen-lg mx-auto flex justify-center w-fit pb-10">
             <img
               src={require('./ARTISTS/hurihan.png')}
               alt="hurriharan"
-              className="w-[200px] pr-2"
+              className="w-[200px] pr-2 lg:w-[300px]"
             />
             <ReactPlayer
               url={hurriharan}
@@ -133,15 +145,18 @@ export default function Highlights() {
       </div>
 
       <div className="bb mb-44 items-center">
-        <div className="bg-black p-[10px] shadow ease-in-out">
-          <div className="mon text-gray-600 mb-4 mt-4 text-center">
+        <div className="bg-black p-[10px] shadow ease-in-out text-center">
+          <a
+            href="https://www.instagram.com/nwo_flare"
+            className="mon text-gray-600 mb-4 mt-4 lg:text-4xl"
+          >
             @Nwo_flare
-          </div>
+          </a>
           <div className="max-w-screen-lg mx-auto flex justify-center w-fit pb-10">
             <img
               src={require('./ARTISTS/nwo.png')}
               alt="nwo flare"
-              className="w-[200px] pr-2"
+              className="w-[200px] pr-2 lg:w-[300px]"
             />
             <ReactPlayer
               url={nwo}
@@ -154,15 +169,18 @@ export default function Highlights() {
       </div>
 
       <div className="bb mb-44 items-center">
-        <div className="bg-black p-[10px] shadow ease-in-out">
-          <div className="mon text-gray-600 mb-4 mt-4 text-center">
+        <div className="bg-black p-[10px] shadow ease-in-out text-center">
+          <a
+            href="https://www.instagram.com/mattpistonn"
+            className="mon text-gray-600 mb-4 mt-4 lg:text-4xl"
+          >
             @Mattpistonn
-          </div>
+          </a>
           <div className="max-w-screen-lg mx-auto flex justify-center w-fit pb-10">
             <img
               src={require('./ARTISTS/matt.png')}
               alt="matt piston"
-              className="w-[200px] pr-2"
+              className="w-[200px] pr-2 lg:w-300px]"
             />
             <ReactPlayer
               url={mattP}
@@ -175,15 +193,18 @@ export default function Highlights() {
       </div>
 
       <div className="bb mb-44 items-center">
-        <div className="bg-black p-[10px] shadow ease-in-out">
-          <div className="mon text-gray-600 mb-4 mt-4 text-center">
+        <div className="bg-black p-[10px] shadow ease-in-out text-center">
+          <a
+            href="https://www.instagram.com/whotfismylesbrando"
+            className="mon text-gray-600 lg:text-4xl"
+          >
             @Whotfismylesbrando
-          </div>
+          </a>
           <div className="max-w-screen-lg mx-auto flex justify-center w-fit pb-10">
             <img
               src={require('./ARTISTS/myles.png')}
               alt="myles brando"
-              className="w-[250px] pr-2"
+              className="w-[250px] pr-2 lg:w-[300px]"
             />
             <ReactPlayer
               url={mylesB}
@@ -196,10 +217,13 @@ export default function Highlights() {
       </div>
 
       <div className="bb mb-44 items-center">
-        <div className="bg-black p-[10px] shadow ease-in-out">
-          <div className="mon text-gray-600 mb-4 mt-4 text-center">
+        <div className="bg-black p-[10px] shadow ease-in-out text-center">
+          <a
+            href="https://www.instagram.com/tiff.isthaname"
+            className="mon text-gray-600 mb-4 mt-4 lg:text-4xl"
+          >
             @Tiff.isthaname
-          </div>
+          </a>
           <div className="max-w-screen-lg mx-auto flex justify-center w-fit pb-10">
             <img
               src={require('./ARTISTS/tiff.png')}
@@ -211,10 +235,13 @@ export default function Highlights() {
       </div>
 
       <div className="bb mb-44 items-center">
-        <div className="bg-black p-[10px] shadow ease-in-out">
-          <div className="mon text-gray-600 mb-4 mt-4 text-center">
+        <div className="bg-black p-[10px] shadow ease-in-out text-center">
+          <a
+            href="https://www.instagram.com/taemackk"
+            className="mon text-gray-600 mb-4 mt-4 lg:text-4xl"
+          >
             @Taemackk
-          </div>
+          </a>
           <div className="max-w-screen-lg mx-auto flex justify-center w-fit pb-10">
             <img
               src={require('./ARTISTS/taemack.png')}
@@ -226,15 +253,18 @@ export default function Highlights() {
       </div>
 
       <div className="bb mb-44 items-center">
-        <div className="bg-black p-[10px] shadow ease-in-out">
-          <div className="mon text-gray-600 mb-4 mt-4 text-center">
+        <div className="bg-black p-[10px] shadow ease-in-out text-center">
+          <a
+            href="https://www.instagram.com/edotbirkin"
+            className="mon text-gray-600 mb-4 mt-4 lg:text-4xl"
+          >
             @Edotbirkin
-          </div>
+          </a>
           <div className="max-w-screen-lg mx-auto flex justify-center w-fit pb-10">
             <img
               src={require('./ARTISTS/edot.png')}
               alt="Edot"
-              className="w-[150px] pr-2"
+              className="w-[150px] pr-2 lg:w-[200px]"
             />
             <ReactPlayer
               url={edot}
@@ -247,15 +277,18 @@ export default function Highlights() {
       </div>
 
       <div className="bb mb-44 items-center">
-        <div className="bg-black p-[10px] shadow ease-in-out">
-          <div className="mon text-gray-600 mb-4 mt-4 text-center">
+        <div className="bg-black p-[10px] shadow ease-in-out text-center">
+          <a
+            href="https://www.instagram.com/"
+            className="mon text-gray-600 mb-4 mt-4 lg:text-4xl"
+          >
             @Sha.supreme
-          </div>
+          </a>
           <div className="max-w-screen-lg mx-auto flex justify-center w-fit pb-10">
             <img
               src={require('./ARTISTS/sha.supreme.png')}
               alt="Sha supreme"
-              className="w-[200px] pr-2"
+              className="w-[200px] pr-2 lg:w-[300px]"
             />
             <ReactPlayer
               url={sha}
@@ -268,10 +301,13 @@ export default function Highlights() {
       </div>
 
       <div className="bb mb-44 items-center">
-        <div className="bg-black p-[10px] shadow ease-in-out">
-          <div className="mon text-gray-600 mb-4 mt-4 text-center">
+        <div className="bg-black p-[10px] shadow ease-in-out text-center">
+          <a
+            href="https://www.instagram.com/kelz2buzy"
+            className="mon text-gray-600 mb-4 mt-4 lg:text-4xl"
+          >
             @Kelz2busy
-          </div>
+          </a>
           <div className="max-w-screen-lg mx-auto flex justify-center w-fit pb-10">
             <img
               src={require('./ARTISTS/kelz.png')}

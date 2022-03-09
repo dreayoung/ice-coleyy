@@ -13,7 +13,7 @@ export default function Home() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 4000);
+    }, 3000);
   }, []);
 
   return (
@@ -27,52 +27,39 @@ export default function Home() {
       ) : (
         <div data-testid="hmpg-1">
           <div className="relative top-0 lg:overflow-hidden">
-            {/* <div className="w-full h-full bg-ice-green absolute opacity-30" /> */}
             <div className="w-full h-full absolute lg:top-0 lg:flex lg:text-left">
               <img
                 src={process.env.PUBLIC_URL + '/gold.png'}
-                className="ml-2 mt-2"
+                className="ml-2 mt-2 w-[150px] lg:w-[280px] lg:h-[280px] lg:ml-72 lg:mt-0"
                 alt="ice"
-                width="150px"
               />
             </div>
-            <div className="logo absolute rotate-[325deg] text-right text-3xl mt-12 ml-12 text-white">
+            <div className="logo absolute rotate-[325deg] text-right text-3xl mt-12 ml-12 text-white lg:ml-80 lg:text-7xl lg:mt-20">
               Fashion <br /> Portfolio
             </div>
             <div className="justify-center min-h-screen lg:flex lg:min-h-screen">
               <img
                 src={process.env.PUBLIC_URL + '/Headshot2.jpg'}
-                className="w-3/4 mx-auto pt-16 lg:w-[500px] lg:h-[620px] lg:pt-10"
+                className="w-3/4 mx-auto pt-16 lg:w-[600px] lg:h-[720px] lg:pt-10"
                 alt="Ice Colley HeadShot2"
               />
-              {/* <img
-                src={process.env.PUBLIC_URL + '/Headshot1.jpg'}
-                className="w-[250px] h-[250px] mx-auto lg:w-[500px] lg:h-[620px] lg:pt-10"
-                alt="Ice Colley HeadShot1"
-              /> */}
             </div>
           </div>
-          <div className="per flex absolute right-4 top-10 lg:bottom-28 lg:right-20">
+          <div className="per flex absolute right-4 top-10 lg:bottom-28 lg:right-80">
             <a
               href="https://www.instagram.com/ice.coleyy/"
               target="_blank"
               rel="noreferrer"
-              className="pb-6 hover:drop-shadow-md hover:brightness-125 lg:pb-6"
+              className="pb-6 hover:drop-shadow-md hover:brightness-125"
             >
               <AiFillInstagram size={30} color="silver" />
             </a>
-            {/* <div className="text-gray-400 text-3xl pb-10 hover:text-gray-700 lg:pb-8 lg:text-3xl lg:hover:text-gray-700">
-              <Link to="/gallery">GALLERY</Link>
-            </div>
-            <div className="text-gray-400 text-3xl hover:text-gray-700 lg:text-3xl lg:hover:text-gray-700">
-              <Link to="/contact">CONTACT</Link>
-            </div> */}
           </div>
 
-          <div className="logo absolute text-right text-4xl right-8 bottom-56 text-gray-400 lg:text-gray-600 lg:text-4xl lg:ml-8 lg:mt-6">
+          <div className="logo absolute text-right text-4xl right-8 bottom-56 text-gray-400 lg:text-4xl lg:right-96 lg:mt-6 lg:bottom-36">
             Ice Coleyy
           </div>
-          <div className="heading absolute text-right right-8 bottom-28 text-gray-400 text-6xl lg:text-gray-600 lg:text-4xl lg:ml-8 lg:mt-6">
+          <div className="heading absolute text-right right-8 bottom-28 text-gray-400 text-6xl lg:text-6xl lg:right-96 lg:mt-6 lg:bottom-10">
             COLE <br /> EDWARDS
           </div>
           <ScrollLink
@@ -81,17 +68,14 @@ export default function Home() {
             spy={true}
             smooth={true}
           >
-            <div className="invisible lg:visible mon absolute text-gray-400 text-3xl right-36 bottom-12 lg:hover:text-gray-700 uppercase">
-              L e a r n<span className="pl-4 pr-4" />M o r e
-            </div>
             <AiOutlineCaretDown
               size={50}
               color="silver"
-              className="absolute right-8 bottom-12 animate-bounce hover:brightness-150 lg:right-20 lg:bottom-12"
+              className="absolute right-8 bottom-12 animate-bounce hover:brightness-150 lg:right-80 lg:bottom-8"
             />
           </ScrollLink>
 
-          <div id="about" className="text-center mt-44 lg:pt-72 lg:pb-32">
+          <div id="about" className="text-center mt-44 lg:pt-44 lg:pb-32">
             <div className="bb text-s pt-8 text-zinc-500 lg:text-l text-block font-thin">
               Event curator | Model
             </div>
@@ -102,7 +86,7 @@ export default function Home() {
             />
             <div className="bb mt-4 grid auto-cols-auto items-center">
               <div className="bg-black flex flex-col items-center rounded-[10px] p-[30px] shadow ease-in-out">
-                <div className="bb leading-relaxed drop-shadow-xl mt-4 text-xs text-zinc-500 lg:border-x-4 lg:border-gray-700 lg:text-xl lg:pr-52 lg:pl-52">
+                <div className="bb leading-relaxed drop-shadow-xl mt-4 text-xs text-zinc-500 lg:text-xl lg:pr-52 lg:pl-52">
                   <p className="mb-4">
                     Wassup, I’m Cole, an event curator and a model signed to
                     @fourthebr4nd agency. I was born and raised in New York City
@@ -135,9 +119,9 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="bb m-10 grid auto-cols-auto items-center">
+            <div className="bb m-4 grid auto-cols-auto items-center lg:border-x-2 lg:border-gray-700">
               <div className="bg-black flex flex-col items-center rounded-[10px] p-[30px] shadow ease-in-out">
-                <p className="text-center text-zinc-500 text-xs mb-8">
+                <p className="text-center text-zinc-500 text-xs mb-8 lg:text-xl">
                   You can contact me by email via the “Contact“ tab. <br />
                   Please include all details of the gig in the “Message” box.
                   <br /> I reply quickly with my rates but standard rates are:
@@ -151,7 +135,7 @@ export default function Home() {
                   {' '}
                   *rates are subject to change after description of the gig*
                 </p>
-                <h1 className="text-zinc-500">
+                <h1 className="text-zinc-500 lg:text-xl">
                   Print Modeling: $20/hr
                   <br /> Runway Modeling: $75
                   <br />
@@ -161,19 +145,19 @@ export default function Home() {
                 <div className="flex space-x-4 mt-4 justify-center">
                   <Link
                     to="/portfolio"
-                    className="mon text-xs border border-transparent mt-4 p-4 text-base ring-1 ring-blue-500/50 rounded-full text-zinc-500 hover:bg-zinc-800 hover:text-white"
+                    className="mon text-xs border border-transparent mt-4 p-4 text-base ring-1 ring-blue-500/50 rounded-full text-zinc-500 hover:bg-zinc-800 hover:text-white lg:text-xl"
                   >
                     portfolio
                   </Link>
                   <Link
                     to="/highlights"
-                    className="mon text-xs border border-transparent mt-4 p-4 text-base ring-1 ring-blue-500/50 rounded-full text-zinc-500 hover:bg-zinc-800 hover:text-white"
+                    className="mon text-xs border border-transparent mt-4 p-4 text-base ring-1 ring-blue-500/50 rounded-full text-zinc-500 hover:bg-zinc-800 hover:text-white lg:text-xl"
                   >
                     highlights
                   </Link>
                   <Link
                     to="/contact"
-                    className="mon text-xs border border-transparent mt-4 p-4 text-base ring-1 ring-blue-500/50 rounded-full text-zinc-500 hover:bg-zinc-800 hover:text-white"
+                    className="mon text-xs border border-transparent mt-4 p-4 text-base ring-1 ring-blue-500/50 rounded-full text-zinc-500 hover:bg-zinc-800 hover:text-white lg:text-xl"
                   >
                     contact
                   </Link>

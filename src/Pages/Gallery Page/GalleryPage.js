@@ -68,18 +68,15 @@ export default function Gallery() {
                 className="visible lg:invisible absolute top-8 left-8 ring-2 rounded-full p-2 ring-gray-500 hover:text-ice-green hover:ring-ice-green hover:cursor-pointer"
               />
             </Link>
-            <div className="bb text-white animate-pulse text-l text-center mt-8 lg:text-2xl lg:top-80 lg:text-neutral-800">
+            <div className="bb text-gray-400 animate-pulse text-l text-center mt-8 lg:text-2xl lg:top-80">
               select an image...
             </div>
-            <div className="mon hidden lg:block absolute text-8xl right-20 top-72 uppercase">
-              Gallery
+            <div className="mon hidden lg:block absolute text-7xl right-20 top-72 text-gray-400 uppercase">
+              PORTFOLIO
             </div>
-            <div className="bb hidden lg:block absolute text-2xl right-32 top-96">
+            <div className="bb hidden lg:block absolute text-2xl right-32 text-white top-96">
               Take a look inside my thoughts..
             </div>
-            {/* <div className="bb visible absolute text-l left-20 bottom-8 lg:text-l lg:top-96 lg:left-[420px] lg:text-neutral-800">
-      click here for more photos
-    </div> */}
           </div>
 
           <div className="grid grid-cols-2 gap-10 ml-2 mt-10 px-12 justify-center md:ml-44 lg:mx-auto">

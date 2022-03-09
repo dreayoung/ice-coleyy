@@ -1,42 +1,9 @@
-import React, { useRef, useState, useEffect } from 'react';
-import Footer from '../Resusables/Footer'
+import React, { useState, useEffect } from 'react';
+import Footer from '../Resusables/Footer';
 import { AiOutlineMail } from 'react-icons/ai';
-import emailjs from '@emailjs/browser';
 
 export default function Contact() {
-  const form = useRef();
-
   const [status, setStatus] = useState('');
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        'service_rn78f4y',
-        'template_zr539r4',
-        form.current,
-        'user_S28fFgEj80Fk6zJmzNWEF'
-      )
-      .then(
-        (result) => {
-          console.log('success', result.text);
-          setStatus('SUCCESS');
-        },
-        (error) => {
-          console.log('fail..', error.text);
-        }
-      );
-    e.target.reset();
-  };
-
-  useEffect(() => {
-    if (status === 'SUCCESS') {
-      setTimeout(() => {
-        setStatus('');
-      }, 5000);
-    }
-  }, [status]);
 
   return (
     <>
@@ -48,18 +15,19 @@ export default function Contact() {
                 <AiOutlineMail size={30} className="m-2 text-white" />
               </div>
               <p className="bb mt-8 text-sm text-zinc-400 text-center">
-                Don't be shy -- drop me a line, <br />i'll get back to you as soon as
-                possible!
+                Don't be shy -- drop me a line, <br />
+                i'll get back to you as soon as possible!
               </p>
             </div>
           </div>
           <div className="mt-5 md:mt-0 md:col-span-2">
-            <form ref={form} onSubmit={sendEmail}>
+            <form name="contact-form" method="post">
+              <input type="hidden" name="form-name" value="contact-form" />
               <div className="shadow sm:rounded-md sm:overflow-hidden">
                 <div className="px-4 py-5 bg-black space-y-6 sm:p-6">
                   {status === 'SUCCESS' ? (
-                    <div className="px-4 py-3 leading normal text-center text-ice-green bg-gray-100 rounded-full">
-                      <p>your message has been sent!</p>
+                    <div className="px-4 py-3 leading normal text-center text-ice-green ring-1 ring-ice-green rounded-full bg-black ">
+                      <p>Your message has been successfully sent!</p>
                     </div>
                   ) : null}
                   <div className="grid grid-cols-3 gap-6">
@@ -72,9 +40,11 @@ export default function Contact() {
                       </label>
                       <input
                         className="appearance-none block w-full bg-gray-200 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                        id="grid-first-name"
                         type="text"
-                        name="full_name"
+                        id="name"
+                        name="name"
+                        placeholder="Jane Doe"
+                        required
                       />
                     </div>
                   </div>
@@ -89,9 +59,11 @@ export default function Contact() {
                       </label>
                       <input
                         className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                        id="email"
                         type="email"
+                        id="email"
                         name="email"
+                        placeholder="doe@example.com"
+                        required
                       />
                     </div>
                   </div>
@@ -101,24 +73,24 @@ export default function Contact() {
                         className="bb block uppercase tracking-wide text-zinc-400 text-xs font-bold mb-2"
                         htmlFor="grid-password"
                       >
-                        Message (please include details of the shoot)
+                        Message
                       </label>
                       <textarea
                         className=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
                         id="message"
                         name="message"
+                        placeholder="Your message here! (please include details of the shoot)"
+                        required
                       ></textarea>
                     </div>
                   </div>
                   <div className="md:flex md:items-center">
                     <div className="md:w-1/3">
-                      <button
+                      <input
                         className="shadow bg-ice-green hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                         type="submit"
                         value="Send"
-                      >
-                        Send
-                      </button>
+                      />
                     </div>
                   </div>
                 </div>
