@@ -1,13 +1,7 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
 
-export default function Cards({
-  name,
-  linktree,
-  noVideo,
-  song,
-  smWidth,
-}) {
+export default function Cards({ name, linktree, noVideo, song, smWidth }) {
   return (
     <div>
       <div className="bb mb-44 items-center">
@@ -45,7 +39,7 @@ export default function Cards({
           </div>
           <div className="max-w-screen-lg mx-auto flex justify-center w-fit pb-10">
             <img
-              src={require(`./ARTISTS/${name}.PNG`)}
+              src={require(`./ARTISTS/${name}.png`)}
               alt={name}
               className="w-[200px] pr-2 lg:w-[300px]"
             />
