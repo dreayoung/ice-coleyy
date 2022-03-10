@@ -134,7 +134,7 @@ export default function Highlights() {
                 className="p-2 mb-2 ring-2 rounded-full ring-gray-500 hover:brightness-150"
               />
             </Link>
-            <Link to="/highlights">
+            <Link to="/">
               <AiOutlineHome
                 color="silver"
                 size={50}

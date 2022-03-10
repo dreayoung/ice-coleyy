@@ -59,7 +59,7 @@ export default function Home() {
               rel="noreferrer"
               className="pb-8 hover:drop-shadow-md hover:brightness-125"
             >
-              <AiFillInstagram size={45} color="silver" />
+              <AiFillInstagram size={40} color="silver" />
             </a>
             <Link to="/portfolio">
               <AiOutlinePicture
