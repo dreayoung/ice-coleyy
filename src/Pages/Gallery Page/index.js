@@ -58,10 +58,10 @@ const GalleryPageImages = {
     require('./Images/ColorsOfLux/mail.png'),
   ],
   show_must_go_on: [
-    require('./Images/Show Must Go On/Show Must Go On (1).jpg'),
-    require('./Images/Show Must Go On/Show Must Go On (2).jpg'),
-    require('./Images/Show Must Go On/Show Must Go On (3).jpg'),
-    require('./Images/Show Must Go On/Show Must Go On (3).jpg'),
+    require('./Images/Show Must Go On/Show Must Go On (1).JPG'),
+    require('./Images/Show Must Go On/Show Must Go On (2).JPG'),
+    require('./Images/Show Must Go On/Show Must Go On (3).JPG'),
+    require('./Images/Show Must Go On/Show Must Go On (3).JPG'),
   ],
   grounded: [
     require('./Images/Grounded/Grounded (1).jpg'),
