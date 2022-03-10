@@ -6,10 +6,10 @@ const GalleryPageImages = {
     require('./Images/HTA_x_HoodstyleHub_photoshoot/HTA (5).jpg'),
   ],
   the_office: [
-    require('./Images/the_office/stand.JPG'),
-    require('./Images/the_office/B1.JPG'),
-    require('./Images/the_office/DD.JPG'),
-    require('./Images/the_office/E0.JPG'),
+    require('./Images/The Office/5E89C17A-C97C-4ABC-B383-5BEB423550FB.JPG'),
+    require('./Images/The Office/B15E082D-C93A-47D2-A96D-D9E6C4E62294.JPG'),
+    require('./Images/The Office/DDF2B544-5DBE-4611-ABEA-4835BE822A4B.JPG'),
+    require('./Images/The Office/E04FF4FA-1ECE-4B26-8685-E0D8532F92E1.JPG'),
   ],
   tiied: [
     require('./Images/Tiiied/Tiiied (1).jpg'),
