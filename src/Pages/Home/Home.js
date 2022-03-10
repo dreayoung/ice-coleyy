@@ -17,7 +17,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(false);
+    setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 3000);
@@ -32,8 +32,8 @@ export default function Home() {
           alt="ice"
         />
       ) : (
-        <div data-testid="hmpg-1">
-          <div className="relative top-0 overflow-hidden lg:overflow-hidden">
+        <div>
+          <div className="relative top-0">
             <div className="w-full h-full absolute lg:top-0 lg:flex lg:text-left">
               <img
                 src={process.env.PUBLIC_URL + '/gold.png'}
@@ -52,30 +52,42 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="per flex absolute right-4 top-10 lg:bottom-28 lg:right-80">
+          <div className="per flex absolute right-2 top-10 lg:bottom-28 lg:right-80">
             <a
               href="https://www.instagram.com/ice.coleyy/"
               target="_blank"
               rel="noreferrer"
               className="pb-8 hover:drop-shadow-md hover:brightness-125"
             >
-              <AiFillInstagram size={30} color="silver" />
+              <AiFillInstagram size={45} color="silver" />
             </a>
             <Link to="/portfolio">
-              <AiOutlinePicture color="silver" size={40} className="p-2 mb-2 ring-2 rounded-full ring-gray-500 hover:brightness-150" />
+              <AiOutlinePicture
+                color="silver"
+                size={40}
+                className="p-2 mb-2 ring-2 rounded-full ring-gray-500 hover:brightness-150"
+              />
             </Link>
             <Link to="/highlights">
-              <AiTwotoneStar color="silver" size={40} className="p-2 mb-2 ring-2 rounded-full ring-gray-500 hover:brightness-150"/>
+              <AiTwotoneStar
+                color="silver"
+                size={40}
+                className="p-2 mb-2 ring-2 rounded-full ring-gray-500 hover:brightness-150"
+              />
             </Link>
             <Link to="/contact">
-              <AiOutlinePhone color="silver" size={40} className="p-2 mb-2 ring-2 rounded-full ring-gray-500 hover:brightness-150"/>
+              <AiOutlinePhone
+                color="silver"
+                size={40}
+                className="p-2 mb-2 ring-2 rounded-full ring-gray-500 hover:brightness-150"
+              />
             </Link>
           </div>
 
           <div className="logo absolute text-right text-4xl right-8 bottom-56 text-gray-400 lg:text-4xl lg:right-96 lg:mt-6 lg:bottom-36">
             Ice Coleyy
           </div>
-          <div className="heading absolute text-right right-8 bottom-28 text-gray-400 text-6xl lg:text-6xl lg:right-96 lg:mt-6 lg:bottom-10">
+          <div className="mon absolute text-right right-8 bottom-28 text-gray-400 text-6xl lg:text-6xl lg:right-96 lg:mt-6 lg:bottom-10">
             COLE <br /> EDWARDS
           </div>
           <ScrollLink
@@ -86,7 +98,7 @@ export default function Home() {
           >
             <AiOutlineCaretDown
               size={50}
-              color="silver"
+              color="purple"
               className="absolute right-8 bottom-12 animate-bounce hover:brightness-150 lg:right-80 lg:bottom-8"
             />
           </ScrollLink>
@@ -102,7 +114,7 @@ export default function Home() {
             />
             <div className="bb mt-4 grid auto-cols-auto items-center">
               <div className="bg-black flex flex-col items-center rounded-[10px] p-[30px] shadow ease-in-out">
-                <div className="bb leading-relaxed drop-shadow-xl mt-4 text-xs text-zinc-500 lg:text-xl lg:pr-52 lg:pl-52">
+                <div className="bb leading-relaxed drop-shadow-xl mt-4 text-s text-zinc-500 lg:text-xl lg:pr-52 lg:pl-52">
                   <p className="mb-4">
                     {homeAbout.firstSentence}{' '}
                     <a
@@ -119,7 +131,7 @@ export default function Home() {
             </div>
             <div className="bb m-4 grid auto-cols-auto items-center lg:border-x-2 lg:border-gray-700">
               <div className="bg-black flex flex-col items-center rounded-[10px] p-[30px] shadow ease-in-out">
-                <p className="text-center text-zinc-500 text-xs mb-8 lg:text-xl">
+                <p className="text-center text-zinc-500 text-s mb-8 lg:text-xl">
                   {homeAbout.contactOptions}
                 </p>
                 <img
@@ -142,19 +154,19 @@ export default function Home() {
                 <div className="flex space-x-4 mt-4 justify-center">
                   <Link
                     to="/portfolio"
-                    className="mon text-xs border border-transparent mt-4 p-4 text-base ring-1 ring-blue-500/50 rounded-full text-zinc-500 hover:brightness-125 hover:text-white lg:text-xl"
+                    className="mon text-xs mt-4 p-2 text-base border-x-2 border-transparent border-blue-500/50 rounded-full text-zinc-500 hover:brightness-125 hover:text-white lg:text-xl"
                   >
                     portfolio
                   </Link>
                   <Link
                     to="/highlights"
-                    className="mon text-xs border border-transparent mt-4 p-4 text-base ring-1 ring-blue-500/50 rounded-full text-zinc-500 hover:brightness-125 hover:text-white lg:text-xl"
+                    className="mon text-xs mt-4 p-2 text-base border-x-2 border-transparent border-blue-500/50 rounded-full text-zinc-500 hover:brightness-125 hover:text-white lg:text-xl"
                   >
                     highlights
                   </Link>
                   <Link
                     to="/contact"
-                    className="mon text-xs border border-transparent mt-4 p-4 text-base ring-1 ring-blue-500/50 rounded-full text-zinc-500 hover:brightness-125 hover:text-white lg:text-xl"
+                    className="mon text-xs mt-4 p-2 text-base border-x-2 border-transparent border-blue-500/50 rounded-full text-zinc-500 hover:brightness-125 hover:text-white lg:text-xl"
                   >
                     contact
                   </Link>

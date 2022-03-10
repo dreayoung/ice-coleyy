@@ -12,17 +12,16 @@ exports.handler = async function (event) {
          Hi ${name}! <br><br>
          Thanks for getting in touch.
          I have received your message
-         and will get in
-         touch with you shortly
+         and will get back to you shortly
          <br><br>
          Best, <br>
          Coley
       </div>
     `;
     const mail = {
-      from: 'youngtechinds@gmail.com',
+      from: 'colepedwards@gmail.com',
       to: email,
-      subject: 'We have received your message',
+      subject: 'I have received your message',
       html,
     };
     await sendGridMail.send(mail);

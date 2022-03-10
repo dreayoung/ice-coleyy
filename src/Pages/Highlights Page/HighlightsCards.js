@@ -1,7 +1,13 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
 
-export default function Cards({ name, linktree, noVideo, song, lgWidth, smWidth }) {
+export default function Cards({
+  name,
+  linktree,
+  noVideo,
+  song,
+  smWidth,
+}) {
   return (
     <div>
       <div className="bb mb-44 items-center">
@@ -14,15 +20,21 @@ export default function Cards({ name, linktree, noVideo, song, lgWidth, smWidth 
               @{name}
             </a>
             {song ? (
-              <a href={song}>
-                  <img
-                  src={process.env.PUBLIC_URL + '/icons8-earbud-headphones-30.png'}
+              <a href={song} target="_blank" rel="noreferrer">
+                <img
+                  src={
+                    process.env.PUBLIC_URL + '/icons8-earbud-headphones-30.png'
+                  }
                   className="bg-gray-400 hover:brightness-150"
                   alt="link tree"
                 />
               </a>
             ) : (
-              <a href={`https://linktr.ee/${linktree ? linktree : name}`}>
+              <a
+                href={`https://linktr.ee/${linktree ? linktree : name}`}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
                   src={process.env.PUBLIC_URL + '/icons8-linktree.svg'}
                   className="hover:brightness-150 w-[40px]"
@@ -38,14 +50,14 @@ export default function Cards({ name, linktree, noVideo, song, lgWidth, smWidth 
               className="w-[200px] pr-2 lg:w-[300px]"
             />
             <div>
-            {!noVideo ? (
-              <ReactPlayer
-                url={`/videos/${name}.mp4`}
-                controls={true}
-                width={smWidth ? smWidth : '200px'}
-                height="100%"
-              />
-            ) : null}
+              {!noVideo ? (
+                <ReactPlayer
+                  url={`/videos/${name}.mp4`}
+                  controls={true}
+                  width={smWidth ? smWidth : '200px'}
+                  height="100%"
+                />
+              ) : null}
             </div>
           </div>
         </div>

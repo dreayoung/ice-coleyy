@@ -1,12 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Montserrat:wght@900&family=Playfair+Display&family=Raleway&family=Rowdies:wght@700&display=swap');
 
-.heading {
-  font-family: 'Montserrat', sans-serif;
-}
-
-.sub {
-  font-family: 'Raleway', sans-serif;
-}
 
 @media (min-width: 1024px) {
 

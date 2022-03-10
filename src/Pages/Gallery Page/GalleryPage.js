@@ -11,7 +11,7 @@ export default function Gallery() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(false);
+    setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 3000);
@@ -20,7 +20,7 @@ export default function Gallery() {
   return (
     <>
       {loading ? (
-        <div class="logo text-white grid place-items-center h-screen text-2xl animate-pulse">
+        <div class="mon text-white grid place-items-center h-screen text-s animate-pulse">
           into my thoughts...
         </div>
       ) : (

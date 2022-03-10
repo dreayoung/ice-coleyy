@@ -50,7 +50,7 @@ class Slider extends Component {
         id={this.props.id_name}
       >
         <div className="lg:mr-20 lg:ml-20 text-center">
-          <div className="heading text-5xl pb-2 lg:text-4xl">
+          <div className="mon text-5xl pb-2 lg:text-4xl">
             {this.props.shoot}
           </div>
           <div className="bb text-xs">
