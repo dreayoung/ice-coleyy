@@ -20,6 +20,7 @@ const GalleryPageImages = {
     require('./Images/Tiiied/Tiiied (6).jpg'),
     require('./Images/Tiiied/Tiiied (7).jpg'),
     require('./Images/Tiiied/Tiiied (8).jpg'),
+    require('./Images/Tiiied/Tiiied (9).jpg'),
     require('./Images/Tiiied/Tiiied (10).jpg'),
     require('./Images/Tiiied/Tiiied (11).jpg'),
     require('./Images/Tiiied/Tiiied (12).jpg'),
