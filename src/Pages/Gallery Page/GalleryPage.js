@@ -108,7 +108,7 @@ export default function Gallery() {
                 <img
                   src={
                     process.env.PUBLIC_URL +
-                    '/highlightimagesforgallerypage/Tiiied.jpg'
+                    '/highlightimagesforgallerypage/Tiiied.JPG'
                   }
                   alt="tiiied photoshoot"
                   className="rounded-full ring ring-stone-500 w-32 h-32  lg:w-44 lg:h-44"
