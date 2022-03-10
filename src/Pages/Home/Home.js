@@ -46,7 +46,7 @@ export default function Home() {
             </div>
             <div className="justify-center min-h-screen lg:flex lg:min-h-screen">
               <img
-                src={process.env.PUBLIC_URL + '/homepic.JPG'}
+                src={process.env.PUBLIC_URL + '/mail.png'}
                 className="w-3/4 mx-auto pt-16 lg:w-[500px] lg:h-[720px] lg:pt-10"
                 alt="Ice Colley HeadShot2"
               />
@@ -108,7 +108,7 @@ export default function Home() {
               {homeAbout.subHeading}
             </div>
             <img
-              src={process.env.PUBLIC_URL + '/Headshot1.jpg'}
+              src={process.env.PUBLIC_URL + '/homepic.JPG'}
               className="mx-auto mt-10 w-[300px] rounded-md"
               alt="ice"
             />
