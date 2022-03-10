@@ -53,8 +53,8 @@ const GalleryPageImages = {
     require('./Images/ColorsProject_Indigo/Colors-Indigo-Cole-23.png'),
   ],
   colorsOfLux: [
-    require('./Images/ColorsOfLux/headshot1.PNG'),
-    require('./Images/ColorsOfLux/headshot2.PNG'),
+    require('./Images/ColorsOfLux/mail 2.png'),
+    require('./Images/ColorsOfLux/mail.png'),
   ],
   show_must_go_on: [
     require('./Images/ShowMustGoOn/Smgo1.jpg'),
