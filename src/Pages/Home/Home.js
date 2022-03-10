@@ -17,7 +17,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
+    setLoading(false);
     setTimeout(() => {
       setLoading(false);
     }, 3000);
@@ -32,8 +32,8 @@ export default function Home() {
           alt="ice"
         />
       ) : (
-        <div className="sm:overflow-hidden">
-          <div className="relative top-0 overflow-hidden">
+        <div data-testid="hmpg-1">
+          <div className="relative top-0 overflow-hidden lg:overflow-hidden">
             <div className="w-full h-full absolute lg:top-0 lg:flex lg:text-left">
               <img
                 src={process.env.PUBLIC_URL + '/gold.png'}
@@ -62,25 +62,13 @@ export default function Home() {
               <AiFillInstagram size={30} color="silver" />
             </a>
             <Link to="/portfolio">
-              <AiOutlinePicture
-                color="silver"
-                size={40}
-                className="p-2 mb-2 ring-2 rounded-full ring-gray-500 hover:brightness-150"
-              />
+              <AiOutlinePicture color="silver" size={40} className="p-2 mb-2 ring-2 rounded-full ring-gray-500 hover:brightness-150" />
             </Link>
             <Link to="/highlights">
-              <AiTwotoneStar
-                color="silver"
-                size={40}
-                className="p-2 mb-2 ring-2 rounded-full ring-gray-500 hover:brightness-150"
-              />
+              <AiTwotoneStar color="silver" size={40} className="p-2 mb-2 ring-2 rounded-full ring-gray-500 hover:brightness-150"/>
             </Link>
             <Link to="/contact">
-              <AiOutlinePhone
-                color="silver"
-                size={40}
-                className="p-2 mb-2 ring-2 rounded-full ring-gray-500 hover:brightness-150"
-              />
+              <AiOutlinePhone color="silver" size={40} className="p-2 mb-2 ring-2 rounded-full ring-gray-500 hover:brightness-150"/>
             </Link>
           </div>
 

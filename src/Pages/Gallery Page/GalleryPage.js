@@ -11,7 +11,7 @@ export default function Gallery() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
+    setLoading(false);
     setTimeout(() => {
       setLoading(false);
     }, 3000);
@@ -24,7 +24,7 @@ export default function Gallery() {
           into my thoughts...
         </div>
       ) : (
-        <div className="overflow-hidden">
+        <>
           <div className="lg:min-h-screen">
             <div className="lg:flex lg:space-x-20 lg:ml-[1000px]">
               <Link to="/contact">
@@ -354,7 +354,7 @@ export default function Gallery() {
           />
 
           <Footer />
-        </div>
+        </>
       )}
     </>
   );
