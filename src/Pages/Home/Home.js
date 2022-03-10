@@ -17,7 +17,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
+    setLoading(false);
     setTimeout(() => {
       setLoading(false);
     }, 3000);
@@ -41,8 +41,8 @@ export default function Home() {
                 alt="ice"
               />
             </div>
-            <div className="logo absolute rotate-[325deg] text-right text-3xl mt-12 ml-12 text-white lg:ml-[330px] lg:text-6xl lg:mt-16">
-              Fashion <br /> Portfolio
+            <div className="logo absolute rotate-[325deg] text-right text-3xl mt-16 ml-12 text-white lg:ml-[345px] lg:text-6xl lg:mt-24">
+              Portfolio
             </div>
             <div className="justify-center min-h-screen lg:flex lg:min-h-screen">
               <img
@@ -129,7 +129,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="bb m-4 grid auto-cols-auto items-center lg:border-x-2 lg:border-gray-700">
+            <div className="bb m-4 grid auto-cols-auto items-center">
               <div className="bg-black flex flex-col items-center rounded-[10px] p-[30px] shadow ease-in-out">
                 <p className="text-center text-zinc-500 text-s mb-8 lg:text-xl">
                   {homeAbout.contactOptions}

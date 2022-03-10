@@ -13,7 +13,7 @@ export default function Highlights() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
+    setLoading(false);
     setTimeout(() => {
       setLoading(false);
     }, 3000);
@@ -27,38 +27,20 @@ export default function Highlights() {
         </div>
       ) : (
         <>
-          <div className="mon text-white text-4xl mt-16 text-center">
+          <div className="mon text-white text-4xl mt-16 text-center lg:text-7xl">
             Highlights Page
           </div>
-          <div className="bb text-center text-white text-xs mb-16">
+          <div className="bb text-center text-zinc-400 text-xs mb-16 lg:text-xl">
             Footage from past events
           </div>
-          <section className="max-w-screen-lg mx-auto flex justify-center pb-10">
-            <img
-              src={require('./ARTISTS/AQUA.png')}
-              alt="showcase"
-              className="w-[300px] rounded-md"
-            />
-          </section>
 
-          <div className="lg:flex lg:ml-28">
+          <div className="mb-44 lg:grid lg:grid-cols-2 lg:ml-28">
             <div className="bb m-10 grid auto-cols-auto items-center">
               <div className="bg-black flex flex-col items-center rounded-[10px] p-[10px] shadow ease-in-out">
-                <div className="mon text-gray-600 mb-6 mt-2 text-center">
-                  {' '}
-                  Sessions by{' '}
-                  <a
-                    href="https://www.instagram.com/herokes"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="hover:brightness-150"
-                  >
-                    @herokes
-                  </a>
-                </div>
+                <div className="mon text-gray-600 mb-6 mt-2">Art Market</div>
                 <div className="max-w-screen-lg mx-auto flex justify-center pb-10">
                   <ReactPlayer
-                    url={'/videos/sessions.mp4'}
+                    url={'/videos/artmarket.mp4'}
                     controls={true}
                     width="300px"
                     height="100%"
@@ -69,7 +51,7 @@ export default function Highlights() {
 
             <div className="bb m-10 grid auto-cols-auto items-center">
               <div className="bg-black flex flex-col items-center rounded-[10px] p-[10px] shadow ease-in-out">
-                <div className="mon text-gray-600 mb-6 mt-2">
+                <div className="mon text-gray-600 mb-6 mt-2 text-center">
                   237 Showcase by{' '}
                   <a
                     href="https://www.instagram.com/thatlittlife"
@@ -82,9 +64,33 @@ export default function Highlights() {
                 </div>
                 <div className="max-w-screen-lg mx-auto flex justify-center pb-10">
                   <ReactPlayer
-                    url={'/videos/237showcase.mp4'}
+                    url={'/videos/237.mp4'}
                     controls={true}
-                    width="300px"
+                    width="400px"
+                    height="100%"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="bb m-10 grid auto-cols-auto items-center">
+              <div className="bg-black flex flex-col items-center rounded-[10px] p-[10px] shadow ease-in-out">
+                <div className="mon text-gray-600 mb-6 mt-2">
+                  Star Sessions by{' '}
+                  <a
+                    href="https://www.instagram.com/hero.kes"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:brightness-150"
+                  >
+                    @herokes
+                  </a>
+                </div>
+                <div className="max-w-screen-lg mx-auto flex justify-center pb-10">
+                  <ReactPlayer
+                    url={'/videos/star_session.mp4'}
+                    controls={true}
+                    width="400px"
                     height="100%"
                   />
                 </div>
@@ -98,7 +104,7 @@ export default function Highlights() {
                   <ReactPlayer
                     url={'./videos/popup.mp4'}
                     controls={true}
-                    width="300px"
+                    width="400px"
                     height="100%"
                   />
                 </div>
