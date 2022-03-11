@@ -26,7 +26,7 @@ export default function Highlights() {
           Meet the artists...
         </div>
       ) : (
-        <>
+        <div className="overflow-hidden mx-auto">
           <div className="mon text-white text-4xl mt-16 text-center lg:text-7xl">
             Highlights Page
           </div>
@@ -66,7 +66,7 @@ export default function Highlights() {
                   <ReactPlayer
                     url={'/videos/237.mp4'}
                     controls={true}
-                    width="400px"
+                    width="300px"
                     height="100%"
                   />
                 </div>
@@ -90,7 +90,7 @@ export default function Highlights() {
                   <ReactPlayer
                     url={'/videos/star_session.mp4'}
                     controls={true}
-                    width="400px"
+                    width="300px"
                     height="100%"
                   />
                 </div>
@@ -104,7 +104,7 @@ export default function Highlights() {
                   <ReactPlayer
                     url={'./videos/popup.mp4'}
                     controls={true}
-                    width="400px"
+                    width="300px"
                     height="100%"
                   />
                 </div>
@@ -157,7 +157,7 @@ export default function Highlights() {
           </div>
 
           <Footer />
-        </>
+        </div>
       )}
     </>
   );

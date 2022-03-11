@@ -58,21 +58,16 @@ export default function Gallery() {
                     size={60}
                     className="hidden lg:block absolute top-[500px] ring-2 rounded-full p-2 text-gray-700 hover:brightness-150"
                   />
-                  <AiTwotoneStar
-                    color="silver"
-                    size={40}
-                    className="block lg:hidden p-2 mb-2 ring-2 absolute top-8 left-20 rounded-full ring-gray-500 hover:brightness-150"
-                  />
                 </Link>
               </div>
             </div>
             <div className="bb text-gray-400 animate-pulse text-l text-center mt-8 lg:text-2xl lg:top-80">
               select an image...
             </div>
-            <div className="mon hidden lg:block absolute text-7xl right-20 top-72 text-gray-400 uppercase">
+            <div className="mon hidden md:text-6xl lg:block absolute text-7xl right-20 top-72 text-gray-400 uppercase">
               PORTFOLIO
             </div>
-            <div className="bb hidden lg:block absolute text-2xl right-32 text-white top-96">
+            <div className="bb hidden md:text-xl lg:block absolute text-2xl right-32 text-white top-96">
               Take a look inside my thoughts..
             </div>
           </div>
@@ -212,6 +207,22 @@ export default function Gallery() {
               </div>
             </ScrollLink>
           </div>
+          <Link to="/highlights">
+            <AiTwotoneStar
+              color="silver"
+              size={40}
+              className="block lg:hidden p-2 mb-2 ring-2 mx-auto mt-12 rounded-full ring-gray-500 hover:brightness-150"
+            />
+          </Link>
+
+          <Slider
+            imgs={GalleryPageImages.colorsOfLux}
+            shoot="Colors of Luxury"
+            id_name="colors"
+            photographer={['shotxtima']}
+            creative={['shotxtima', 'fourthebr4nd']}
+            model={['ice.coleyy']}
+          />
 
           <Slider
             imgs={GalleryPageImages.the_office}
@@ -220,15 +231,6 @@ export default function Gallery() {
             photographer={['moiiimagg']}
             styling={['ice.coleyy']}
             creative={['sohqu']}
-            model={['ice.coleyy']}
-          />
-
-          <Slider
-            imgs={GalleryPageImages.colorsOfLux}
-            shoot="Colors of Luxury"
-            id_name="colors"
-            photographer={['shotxtima']}
-            creative={['shotxtima', 'fourthebr4nd']}
             model={['ice.coleyy']}
           />
 
@@ -338,7 +340,7 @@ export default function Gallery() {
             imgs={GalleryPageImages.hta_hoodstyle}
             shoot="HTA x Hoodstyle Hub"
             id_name="HTA_x_HoodstyleHub"
-            photographer={['kaiireloaded', 'dreaaa']}
+            photographer={['kaiireloaded']}
             styling={['herotoall']}
             creative={['kw33n__t.y']}
             model={['ice.coleyy', 'yangstarrrrrrr']}

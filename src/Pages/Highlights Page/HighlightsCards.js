@@ -37,11 +37,11 @@ export default function Cards({ name, linktree, noVideo, song, smWidth }) {
               </a>
             )}
           </div>
-          <div className="max-w-screen-lg mx-auto flex justify-center w-fit pb-10">
+          <div className="mx-auto flex justify-center w-fit pb-10">
             <img
               src={require(`./ARTISTS/${name}.PNG`)}
               alt={name}
-              className="w-[200px] pr-2 lg:w-[300px]"
+              className="w-fit pr-2 lg:w-[300px]"
             />
             <div>
               {!noVideo ? (

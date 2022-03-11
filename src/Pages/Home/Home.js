@@ -84,10 +84,10 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="logo absolute text-right text-4xl right-8 bottom-56 text-gray-400 lg:text-4xl lg:right-96 lg:mt-6 lg:bottom-36">
-            Ice Coleyy
+          <div className="logo absolute text-right text-4xl right-8 bottom-60 text-gray-400 lg:text-4xl lg:right-96 lg:mt-6 lg:bottom-36">
+            Ice Cole
           </div>
-          <div className="mon absolute text-right right-8 bottom-28 text-gray-400 text-6xl lg:text-6xl lg:right-96 lg:mt-6 lg:bottom-10">
+          <div className="mon absolute text-right right-8 bottom-32 text-gray-400 text-6xl lg:text-6xl lg:right-96 lg:mt-6 lg:bottom-10">
             COLE <br /> EDWARDS
           </div>
           <ScrollLink
@@ -99,7 +99,7 @@ export default function Home() {
             <AiOutlineCaretDown
               size={50}
               color="purple"
-              className="absolute right-8 bottom-12 animate-bounce hover:brightness-150 lg:right-80 lg:bottom-8"
+              className="absolute right-8 bottom-16 animate-bounce hover:brightness-150 lg:right-80 lg:bottom-8"
             />
           </ScrollLink>
 
