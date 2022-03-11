@@ -26,12 +26,12 @@ export default function Gallery() {
       ) : (
         <>
           <div className="lg:min-h-screen">
-            <div className="lg:flex lg:space-x-20 lg:ml-[1000px]">
+            <div className="lg:flex lg:space-x-20 lg:ml-[1030px]">
               <Link to="/contact">
                 <AiOutlinePhone
                   size={60}
                   color="white"
-                  className="hidden lg:block  absolute top-[500px] ring-2 p-2 rounded-full text-gray-700 hover:brightness-150"
+                  className="hidden lg:block absolute top-[500px] ring-2 p-2 rounded-full text-gray-700 hover:brightness-150"
                 />
                 <AiOutlinePhone
                   size={40}
@@ -64,10 +64,10 @@ export default function Gallery() {
             <div className="bb text-gray-400 animate-pulse text-l text-center mt-8 lg:text-2xl lg:top-80">
               select an image...
             </div>
-            <div className="mon hidden md:text-6xl lg:block absolute text-7xl right-20 top-72 text-gray-400 uppercase">
+            <div className="mon hidden md:text-6xl lg:block absolute lg:text-7xl right-20 top-72 text-gray-400 uppercase">
               PORTFOLIO
             </div>
-            <div className="bb hidden md:text-xl lg:block absolute text-2xl right-32 text-white top-96">
+            <div className="bb hidden md:text-xl lg:block absolute lg:text-2xl right-32 text-white top-96">
               Take a look inside my thoughts..
             </div>
           </div>
