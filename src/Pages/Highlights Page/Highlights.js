@@ -130,7 +130,7 @@ export default function Highlights() {
           <Cards name="taemackk" />
           <Cards name="edotbirkin" />
           <Cards name="sha.supreme" linktree="ShaSupreme" />
-          <Cards name="kelz2busy" song=" https://song.link/trnm3fr6hfh26" />
+          <Cards name="kelz2busy" song="https://song.link/trnm3fr6hfh26" />
 
           <div className="flex items-center justify-center space-x-4">
             <Link to="/portfolio">
