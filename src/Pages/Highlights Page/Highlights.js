@@ -37,10 +37,10 @@ export default function Highlights() {
           <div className="mb-44 lg:grid lg:grid-cols-2 lg:ml-28">
             <div className="bb m-10 grid auto-cols-auto items-center">
               <div className="bg-black flex flex-col items-center rounded-[10px] p-[10px] shadow ease-in-out">
-                <div className="mon text-gray-600 mb-6 mt-2">Art Market</div>
-                <div className="max-w-screen-lg mx-auto flex justify-center pb-10">
+                <div className="mon text-gray-600 mb-6 mt-2">Pop Up n Vibe</div>
+                <div className="max-w-screen-lg mx-auto flex justify-center mb-10">
                   <ReactPlayer
-                    url={'/videos/artmarket.mp4'}
+                    url={'./videos/popup.mp4'}
                     controls={true}
                     width="300px"
                     height="100%"
@@ -52,7 +52,7 @@ export default function Highlights() {
             <div className="bb m-10 grid auto-cols-auto items-center">
               <div className="bg-black flex flex-col items-center rounded-[10px] p-[10px] shadow ease-in-out">
                 <div className="mon text-gray-600 mb-6 mt-2 text-center">
-                  237 Showcase by{' '}
+                  237 Session 202 by{' '}
                   <a
                     href="https://www.instagram.com/thatlittlife"
                     target="_blank"
@@ -99,10 +99,10 @@ export default function Highlights() {
 
             <div className="bb m-10 grid auto-cols-auto items-center">
               <div className="bg-black flex flex-col items-center rounded-[10px] p-[10px] shadow ease-in-out">
-                <div className="mon text-gray-600 mb-6 mt-2">Pop Up n Vibe</div>
-                <div className="max-w-screen-lg mx-auto flex justify-center mb-10">
+                <div className="mon text-gray-600 mb-6 mt-2">Art Market</div>
+                <div className="max-w-screen-lg mx-auto flex justify-center pb-10">
                   <ReactPlayer
-                    url={'./videos/popup.mp4'}
+                    url={'/videos/artmarket.mp4'}
                     controls={true}
                     width="300px"
                     height="100%"

@@ -259,6 +259,7 @@ export default function Gallery() {
             id_name="yas"
             shoot="Yasapothecary"
             photographer={['curatorstun']}
+            product="yasapothecary"
             creative={['yasapothecary']}
             model={['ice.coleyy']}
           />

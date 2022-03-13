@@ -74,6 +74,21 @@ class Slider extends Component {
               </div>
             ) : null}
 
+            {this.props.product ? (
+              <div>
+                Product:{' '}
+                <a
+                  href={`https://www.instagram.com/${this.props.product}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:underline hover:decoration-wavy"
+                >
+                  @{this.props.product}
+                  {'  '}
+                </a>
+              </div>
+            ) : null}
+
             {this.props.runway ? (
               <div>
                 Runway:{' '}

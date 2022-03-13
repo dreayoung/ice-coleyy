@@ -37,7 +37,7 @@ export default function Cards({ name, linktree, noVideo, song, smWidth }) {
               </a>
             )}
           </div>
-          <div className="mx-auto flex justify-center w-fit pb-10">
+          <div className="mx-auto flex object-cover justify-center pb-10">
             <img
               src={process.env.PUBLIC_URL + `/ARTISTS/${name}.png`}
               alt={name}
